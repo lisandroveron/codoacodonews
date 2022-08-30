@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px){
+	/* - - - - - G R I D - - - - - */
+	.mainnews{
+		grid-template-columns: auto;
+		grid-template-rows: repeat(auto-fill, auto);
+	}
+	/* - - - - END - G R I D - END - - - - */
+	h1{
+		font-size: 3em;
+	}
+	.shortnews h3{
+		display: none;
+	}
+}

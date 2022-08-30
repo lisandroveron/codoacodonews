@@ -1,0 +1,76 @@
+/* - - - - - F O N T S - A N D - V A R S - - - - - */
+:root{
+	--magenta: #cc1e44;
+	--grey: #565656;
+}
+@font-face{
+	font-family: news;
+	src: url("../assets/fonts/chomsky.otf");
+}
+@font-face{
+	font-family: letters;
+	src: url("../assets/fonts/italiana.ttf");
+}
+/* - - - - END - F O N T S - A N D - V A R S - END - - - - - */
+
+/* - - - - - G E N E R A L - - - - - */
+body{
+	max-width: 960px;
+	margin: auto;
+}
+main{
+	width: 95%;
+	margin: auto;
+}
+nav{
+	width: 100%;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+/* - - - - END - G E N E R A L - END - - - - */
+
+/* - - - - - H E A D E R - - - - - */
+h1{
+	font-family: news;
+	text-align: center;
+	font-size: 5em;
+	color: var(--magenta);
+}
+header p{
+	display: inline-block;
+}
+div{
+	text-align: right;
+}
+/* - - - - END - H E A D E R - END - - - - */
+
+/* - - - - - M A I N - - - - - */
+.shortnews p{
+	display: inline-block;
+	border-top: 2px solid var(--magenta);
+	color: var(--magenta);
+	font-size: 2em;
+	font-weight: bold;
+}
+.shortnews h2{
+	font-size: 2em;
+}
+.shortnews h3{
+	color: var(--grey);
+	font-weight: normal;
+}
+.shortnews img{
+	margin: 15px 0;
+	width: 100%;
+}
+.popularnews{
+	margin: 1rem auto;
+	border-top: 2px solid var(--magenta);
+}
+.popularnews p{
+	border-top: none;
+}
+/* - - - - END - M A I N - END - - - - */

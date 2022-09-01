@@ -1,7 +1,7 @@
 /* - - - - - F O N T S - A N D - V A R S - - - - - */
 :root{
-	--magenta: #cc1e44;
 	--grey: #565656;
+	--magenta: #cc1e44;
 }
 @font-face{
 	font-family: news;
@@ -15,29 +15,29 @@
 
 /* - - - - - G E N E R A L - - - - - */
 body{
-	max-width: 960px;
 	margin: auto;
+	max-width: 960px;
 }
 main{
-	width: 95%;
 	margin: auto;
+	width: 95%;
 }
 nav{
-	width: 100%;
 	text-align: center;
+	width: 100%;
 }
 a{
-	text-decoration: none;
 	color: inherit;
+	text-decoration: none;
 }
 /* - - - - END - G E N E R A L - END - - - - */
 
 /* - - - - - H E A D E R - - - - - */
 h1{
-	font-family: news;
-	text-align: center;
-	font-size: 5em;
 	color: var(--magenta);
+	font-family: news;
+	font-size: 5rem;
+	text-align: center;
 }
 header p{
 	display: inline-block;
@@ -48,29 +48,42 @@ div{
 /* - - - - END - H E A D E R - END - - - - */
 
 /* - - - - - M A I N - - - - - */
+.shortnews{
+	font-size: 1.3rem;
+}
 .shortnews p{
-	display: inline-block;
 	border-top: 2px solid var(--magenta);
 	color: var(--magenta);
-	font-size: 2em;
+	display: inline-block;
 	font-weight: bold;
-}
-.shortnews h2{
-	font-size: 2em;
+	width: auto;
 }
 .shortnews h3{
+	-moz-box-orient: vertical;
+	-ms-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
 	color: var(--grey);
+	display: -webkit-box;
+	font-size: 0.8em;
 	font-weight: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .shortnews img{
+	height: 220px;
 	margin: 15px 0;
+	overflow: hidden;
 	width: 100%;
 }
 .popularnews{
-	margin: 1rem auto;
 	border-top: 2px solid var(--magenta);
+	margin: 2rem auto;
 }
 .popularnews p{
 	border-top: none;
+}
+.popularnews img{
+	height: auto;
 }
 /* - - - - END - M A I N - END - - - - */

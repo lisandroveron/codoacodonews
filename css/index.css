@@ -1,4 +1,4 @@
- /* - - - - - F O N T S - A N D - V A R S - - - - - */
+/* - - - - - F O N T S - A N D - V A R S - - - - - */
 :root{
 	--grey: #565656;
 	--magenta: #cc1e44;
@@ -33,11 +33,6 @@ a{
 /* - - - - END - G E N E R A L - END - - - - */
 
 /* - - - - - H E A D E R - - - - - */
-
-header{
-	padding-bottom: 1rem;
-	border-bottom: solid var(--magenta);
-}
 h1{
 	color: var(--magenta);
 	font-family: news;
@@ -47,7 +42,7 @@ h1{
 header p{
 	display: inline-block;
 }
-.date{
+div{
 	text-align: right;
 }
 /* - - - - END - H E A D E R - END - - - - */

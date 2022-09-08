@@ -54,14 +54,14 @@ td img{
 	height: 50px;
 	width: 50px;
 }
-.infotable{
+.infocell{
 	display: grid;
 	grid-gap: 5px;
 	grid-template-columns: 1em minmax(min-content, max-content);
 	grid-template-rows: auto repeat(3, 1em);
 	justify-items: left;
 }
-.infotable img{
+.infocell img{
 	height: auto;
 	width: auto;
 }

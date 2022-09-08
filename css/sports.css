@@ -1,12 +1,41 @@
-/* BUILDING PAGE */
-.building img{
-    margin: auto;
-    width: 100%;
+/* *{
+    border: 0.5px solid;
+} */
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
 }
-.building p{
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-family: Impact;
-    text-align: center;
+
+main > div{
+    background-color: rgba(255, 255, 255, 0.783);
+    /* border: 1px solid black; */
+    margin: 10px 5px;
+    padding: 1em;
 }
-/* BUILDING PAGE */
+
+.sports-bar{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 1rem;
+}
+
+.sports-bar img{
+    width: 50px;
+}
+
+.news-section{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(5,auto);
+    gap: 3rem;
+}
+
+.section-tittle{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

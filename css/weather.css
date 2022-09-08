@@ -1,37 +1,51 @@
+/* - - - - - F O N T S - A N D - V A R S - - - - - */
 :root{
 	--blue: rgb(14, 50, 142);
 	--lightblue: rgb(141, 172, 252);
 }
+/* - - - - END - F O N T S - A N D - V A R S - END - - - - - */
+
+/* - - - - - H E A D E R - - - - - */
 header{
-	position: relative;
-	height: 25%;
-	z-index: 100;
 	background-color: var(--lightblue);
 	color: black;
+	height: 25%;
+	overflow: hidden;
+	position: relative;
+	z-index: 100;
 }
-nav{
-	position: absolute;
+header h2{
+	color: transparent;
+	font-family: news;
+	font-size: 5rem;
+	position: relative;
+	text-align: center;
+	top: -20%;
+}
+header nav{
 	bottom: 10%;
 	color: black;
-}
-.skyicons{
 	position: absolute;
-	width: 50px;
-	height: 50px;
 }
-.moon{
+.skyicon{
+	height: 50px;
 	left: 80%;
+	position: absolute;
 	top: 20%;
+	width: 50px;
 }
 .waves{
+	background-color: transparent;
+	height: 100%;
 	position: absolute;
 	width: 100%;
-	height: 100%;
-	background-color: transparent;
 }
-.waves .wave{
+.waves path{
 	fill: rgba(240, 240, 240, 0.5);
 }
+/* - - - - END - H E A D E R - END - - - - */
+
+/* - - - - - M A I N - - - - - */
 table{
 	margin: auto;
 	text-align: center;
@@ -42,15 +56,53 @@ td img{
 }
 .infotable{
 	display: grid;
+	grid-gap: 5px;
 	grid-template-columns: 1em minmax(min-content, max-content);
 	grid-template-rows: auto repeat(3, 1em);
 	justify-items: left;
-	grid-gap: 5px;
 }
 .infotable img{
 	height: auto;
 	width: auto;
 }
+/* - - - - END - M A I N - END - - - - */
+
+/* - - - - - F O O T E R - - - - - */
 footer{
 	text-align: center;
 }
+/* - - - - E N D - F O O T E R - E N D - - - - */
+
+/* - - - - - A N I M A T I O N S - - - - - */
+h1{
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-name: disappear;
+}
+header h2{
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-name: appear;
+}
+.sun{
+	animation-duration: 180s;
+	animation-iteration-count: infinite;
+	animation-name: sunrotate;
+	animation-timing-function: linear;
+}
+@keyframes disappear{
+	100%{
+		color: transparent;
+	}
+}
+@keyframes appear{
+	100%{
+		color: var(--magenta);
+	}
+}
+@keyframes sunrotate{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+/* - - - - E N D - A N I M A T I O N S - E N D - - - - */

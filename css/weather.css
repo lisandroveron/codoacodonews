@@ -20,7 +20,7 @@ header h2{
 	font-size: 5rem;
 	position: relative;
 	text-align: center;
-	top: -20%;
+	top: -10%;
 }
 header nav{
 	bottom: 10%;
@@ -75,7 +75,7 @@ footer{
 
 /* - - - - - A N I M A T I O N S - - - - - */
 h1{
-	animation-duration: 2s;
+	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-name: disappear;
 }

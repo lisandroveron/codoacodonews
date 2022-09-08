@@ -9,9 +9,6 @@ header{
 	background-color: var(--lightblue);
 	color: black;
 }
-h1{
-	position: relative;
-}
 nav{
 	position: absolute;
 	bottom: 10%;
@@ -32,6 +29,28 @@ nav{
 	height: 100%;
 	background-color: transparent;
 }
-.waves .wave1{
-	fill: rgba(250, 250, 250, 0.8);
+.waves .wave{
+	fill: rgba(240, 240, 240, 0.5);
+}
+table{
+	margin: auto;
+	text-align: center;
+}
+td img{
+	height: 50px;
+	width: 50px;
+}
+.infotable{
+	display: grid;
+	grid-template-columns: 1em minmax(min-content, max-content);
+	grid-template-rows: auto repeat(3, 1em);
+	justify-items: left;
+	grid-gap: 5px;
+}
+.infotable img{
+	height: auto;
+	width: auto;
+}
+footer{
+	text-align: center;
 }

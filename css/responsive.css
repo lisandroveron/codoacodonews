@@ -15,3 +15,11 @@
 		font-size: 1rem;
 	}
 }
+@media screen and (max-width: 400px){
+	.infotable tr:nth-child(1) th:nth-child(n+2){
+		display: none;
+	}
+	.infotable tr td:nth-child(n+2){
+		display: none;
+	}
+}

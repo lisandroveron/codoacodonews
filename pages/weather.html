@@ -3,9 +3,218 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/logo.svg">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="../css/weather.css">
 	<title>Clima - Diario Codo a Codo</title>
 </head>
 <body>
-
+	<header>
+		<!-- <div>
+			<p>Dolar: $145.16</p>
+			<p>Blue: $292.00</p> 
+			<p>Lunes, 4 de Septiembre de 2022</p>
+		</div> -->
+		<img class="skyicons moon" src="../assets/icons/weather/sun.svg" alt="">
+		<svg class="waves" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+			<path class="wave" 
+			 d="M 100 80
+			 	C 75 70 75 70 50 80, 25 100 25 100 0 90
+			 	V 0 100 H 100 100 Z"
+			 stroke-width="0" stroke="black"></path>
+			<path class="wave" 
+			 d="M 0 70
+				C 10 63 35 63 50 70, 65 80 90 80 100 70
+				L 100 100, 0 100 Z" 
+			stroke-width="0" stroke="black" />
+		</svg>
+		<h1>El clima</h1>
+		<nav>
+			<a href="../index.html">Inicio</a>
+			<a href="weather.html">Clima</a>
+			<a href="">Deportes</a>
+			<a href="">Finanzas</a>
+		</nav>
+	</header>
+	<main>
+		<table>
+			<tr>
+				<th>Hoy</th>
+				<th>Mañana</th>
+				<th>Pasado</th>
+			</tr>
+			<tr>
+				<!-- Today -->
+				<td>
+					<img src="../assets/icons/weather/blackcloudy.svg" alt="">
+					<p>03:00</p>
+					<div class="infotable">
+						<img src="../assets/icons/weather/thermometer.svg" alt="">
+						<p class="celsius">11°</p>
+						<img src="../assets/icons/weather/water.svg" alt="">
+						<p>0 mm</p>
+						<img src="../assets/icons/weather/wind.svg" alt="">
+						<p>N 3m/s</p>
+					</div>
+				</td>
+				<!-- Tomorrow -->
+				<td>
+					<img src="../assets/icons/weather/blackcloud.svg" alt="">
+					<p>03:00</p>
+					<div class="infotable">
+						<img src="../assets/icons/weather/thermometer.svg" alt="">
+						<p class="celsius">5°</p>
+						<img src="../assets/icons/weather/water.svg" alt="">
+						<p>0.25-1 mm</p>
+						<img src="../assets/icons/weather/wind.svg" alt="">
+						<p>SO 3m/s</p>
+					</div>
+				</td>
+				<!-- Day after tomorrow -->
+				<td>
+					<img src="../assets/icons/weather/blackmoon.svg" alt="">
+					<p>03:00</p>
+					<div class="infotable">
+						<img src="../assets/icons/weather/thermometer.svg" alt="">
+						<p class="celsius">2°</p>
+						<img src="../assets/icons/weather/water.svg" alt="">
+						<p>0.25-1 mm</p>
+						<img src="../assets/icons/weather/wind.svg" alt="">
+						<p>SO 2m/s</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<!-- Today -->
+				<td>
+					<img src="../assets/icons/weather/blacksun.svg" alt="">
+					<p>09:00</p>
+					<div class="infotable">
+						<img src="../assets/icons/weather/thermometer.svg" alt="">
+						<p class="celsius">23°</p>
+						<img src="../assets/icons/weather/water.svg" alt="">
+						<p>0 mm</p>
+						<img src="../assets/icons/weather/wind.svg" alt="">
+						<p>N 2m/s</p>
+					</div>
+				</td>
+				<!-- Tomorrow -->
+				<td>
+					<img src="../assets/icons/weather/partialsun.svg" alt="">
+					<p>09:00</p>
+					<div class="infotable">
+						<img src="../assets/icons/weather/thermometer.svg" alt="">
+						<p class="celsius">11°</p>
+						<img src="../assets/icons/weather/water.svg" alt="">
+						<p>0.25-1 mm</p>
+						<img src="../assets/icons/weather/wind.svg" alt="">
+						<p>SO 3m/s</p>
+					</div>
+				</td>
+				<!-- Day after tomorrow -->
+				<td>
+					<img src="../assets/icons/weather/blacksun.svg" alt="">
+					<p>09:00</p>
+					<div class="infotable">
+						<img src="../assets/icons/weather/thermometer.svg" alt="">
+						<p class="celsius">14°</p>
+						<img src="../assets/icons/weather/water.svg" alt="">
+						<p>0.25-1 mm</p>
+						<img src="../assets/icons/weather/wind.svg" alt="">
+						<p>SO 3m/s</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<!-- Today -->
+				<td>
+					<img src="../assets/icons/weather/rainyday.svg" alt="">
+					<p>15:00</p>
+					<div class="infotable">
+						<img src="../assets/icons/weather/thermometer.svg" alt="">
+						<p class="celsius">16°</p>
+						<img src="../assets/icons/weather/water.svg" alt="">
+						<p>0-0.25 mm/h</p>
+						<img src="../assets/icons/weather/wind.svg" alt="">
+						<p>S 3m/s</p>
+					</div>
+				</td>
+				<!-- Tomorrow -->
+				<td>
+					<img src="../assets/icons/weather/blacksun.svg" alt="">
+					<p>15:00</p>
+					<div class="infotable">
+						<img src="../assets/icons/weather/thermometer.svg" alt="">
+						<p class="celsius">12°</p>
+						<img src="../assets/icons/weather/water.svg" alt="">
+						<p>0.25-1 mm</p>
+						<img src="../assets/icons/weather/wind.svg" alt="">
+						<p>SO 3m/s</p>
+					</div>
+				</td>
+				<!-- Day after tomorrow -->
+				<td>
+					<img src="../assets/icons/weather/blacksun.svg" alt="">
+					<p>15:00</p>
+					<div class="infotable">
+						<img src="../assets/icons/weather/thermometer.svg" alt="">
+						<p class="celsius">13°</p>
+						<img src="../assets/icons/weather/water.svg" alt="">
+						<p>0.25-1 mm</p>
+						<img src="../assets/icons/weather/wind.svg" alt="">
+						<p>S 2m/s</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<!-- Today -->
+				<td>
+					<img src="../assets/icons/weather/rainynight.svg" alt="">
+					<p>21:00</p>
+					<div class="infotable">
+						<img src="../assets/icons/weather/thermometer.svg" alt="">
+						<p class="celsius">8°</p>
+						<img src="../assets/icons/weather/water.svg" alt="">
+						<p>0.25-1 mm</p>
+						<img src="../assets/icons/weather/wind.svg" alt="">
+						<p>S 3m/s</p>
+					</div>
+				</td>
+				<!-- Tomorrow -->
+				<td>
+					<img src="../assets/icons/weather/blackmoon.svg" alt="">
+					<p>21:00</p>
+					<div class="infotable">
+						<img src="../assets/icons/weather/thermometer.svg" alt="">
+						<p class="celsius">5°</p>
+						<img src="../assets/icons/weather/water.svg" alt="">
+						<p>0.25-1 mm</p>
+						<img src="../assets/icons/weather/wind.svg" alt="">
+						<p>SO 2m/s</p>
+					</div>
+				</td>
+				<!-- Day after tomorrow -->
+				<td>
+					<img src="../assets/icons/weather/blackmoon.svg" alt="">
+					<p>21:00</p>
+					<div class="infotable">
+						<img src="../assets/icons/weather/thermometer.svg" alt="">
+						<p class="celsius">6°</p>
+						<img src="../assets/icons/weather/water.svg" alt="">
+						<p>0.25-1 mm</p>
+						<img src="../assets/icons/weather/wind.svg" alt="">
+						<p>E 2m/s</p>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</main>
+	<aside></aside>
+	<footer>
+		<p>Diario Codo a Codo. © Todos los derechos reservados. 2022</p>
+	</footer>
 </body>
 </html>

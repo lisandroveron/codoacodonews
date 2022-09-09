@@ -39,6 +39,7 @@ header{
 	border-bottom: solid var(--magenta);
 }
 h1{
+	height: 25%;
 	color: var(--magenta);
 	font-family: news;
 	font-size: 5rem;

@@ -1,19 +1,15 @@
+
+
 main{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 10px;
-}
-
-main > div{
-    background-color: rgba(255, 255, 255, 0.783);
-    /* border: 1px solid black; */
-    margin: 10px 5px;
-    padding: 1em;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    margin-top: 4rem;
 }
 
 .sports-bar a, .sports-bar img{
-    width: 50px;
-    height: 50px;
+    width: 2.8rem;
+    height: 2.8rem;
 }
 
 .section-tittle{
@@ -21,5 +17,18 @@ main > div{
     font-size: 3rem;
     text-align: left;
     grid-column: 1 / 4
+}
+
+.sports-bar{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr );
+    justify-items: center;
+}
+
+
+.news-section > div{
+    display: grid;
+    grid-template: repeat(3,auto);
+    gap: 2rem;
 }
 

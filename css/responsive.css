@@ -1,21 +1,24 @@
-@media screen and (max-width: 600px){
-	/* - - - - - G R I D - - - - - */
+@media screen and (max-width: 1200px){
 	.mainnews{
-		grid-template-columns: auto;
-		grid-template-rows: repeat(auto-fill, auto);
+		grid-template-columns: repeat(2, 1fr);	
 	}
-	/* - - - - END - G R I D - END - - - - */
-	h1{
-		font-size: 3rem;
+}
+
+@media screen and (max-width: 850px){
+	:root{
+		font-size: 12px;
 	}
-	header h2{
-		font-size: 3rem;
+	.aside-content_large{
+		grid-column: 1/2;
 	}
-	.shortnews{
-		font-size: 1rem;
+}
+
+@media screen and (max-width:600px) {
+	:root{
+		font-size: 9px;
 	}
-	.shortnews h3{
-		font-size: 1rem;
+	.mainnews{
+		grid-template-columns: 1fr;	
 	}
 }
 @media screen and (max-width: 400px){

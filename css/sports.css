@@ -1,7 +1,3 @@
-/*  *{
-    border: 0.5px solid;
-}  */
-
 main{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -26,3 +22,4 @@ main > div{
     text-align: left;
     grid-column: 1 / 4
 }
+

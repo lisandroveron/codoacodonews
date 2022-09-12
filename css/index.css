@@ -3,20 +3,18 @@
 	--grey: #565656;
 	--magenta: #cc1e44;
 }
+
 @font-face{
 	font-family: news;
-	src: url("../assets/fonts/chomsky.otf");
+	src: url("../assets/fonts/ChakraPetch-Bold.ttf");
 }
-@font-face{
-	font-family: letters;
-	src: url("../assets/fonts/italiana.ttf");
-}
+
 /* - - - - END - F O N T S - A N D - V A R S - END - - - - - */
 
 /* - - - - - G E N E R A L - - - - - */
 body{
 	margin: auto;
-	max-width: 95vw;
+	max-width: 80vw;
 }
 main{
 	margin: auto;

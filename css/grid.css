@@ -10,3 +10,15 @@
 	grid-template-columns: auto;
 	grid-template-rows: auto 1fr auto;
 }
+
+.sports-bar{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr );
+    justify-items: center;
+}
+
+.news-section > div{
+    display: grid;
+    grid-template: repeat(3,auto);
+    gap: 2rem;
+}

@@ -5,16 +5,10 @@
 		grid-template-rows: repeat(auto-fill, auto);
 	}
 	/* - - - - END - G R I D - END - - - - */
-	h1{
-		font-size: 3rem;
-	}
-	header h2{
+	h1, header h2{
 		font-size: 3rem;
 	}
 	.shortnews{
-		font-size: 1rem;
-	}
-	.shortnews h3{
 		font-size: 1rem;
 	}
 }

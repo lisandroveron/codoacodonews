@@ -1,3 +1,21 @@
+header{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas: "date"
+						 "title"
+						 "navbar";
+}
+header>p{
+	grid-area: date;
+}
+header h1, header>h2{
+	grid-area: title;
+	align-self: center;
+}
+header nav{
+	grid-area: navbar;
+}
 .mainnews{
 	display: grid;
 	grid-template-columns: 1fr 1fr;

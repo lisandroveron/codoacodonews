@@ -16,15 +16,14 @@
 /* - - - - - G E N E R A L - - - - - */
 body{
 	margin: auto;
+	width: 95%;
 	max-width: 960px;
 }
 main{
 	margin: auto;
-	width: 95%;
 }
 nav{
 	text-align: center;
-	width: 100%;
 }
 a{
 	color: inherit;
@@ -33,18 +32,19 @@ a{
 /* - - - - END - G E N E R A L - END - - - - */
 
 /* - - - - - H E A D E R - - - - - */
-h1{
+header{
+	color: black;
 	height: 25%;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 20px;
+}
+h1{
 	color: var(--magenta);
+	margin: auto;
 	font-family: news;
 	font-size: 5rem;
 	text-align: center;
-}
-header p{
-	display: inline-block;
-}
-div{
-	text-align: right;
 }
 /* - - - - END - H E A D E R - END - - - - */
 
@@ -79,7 +79,7 @@ div{
 }
 .popularnews{
 	border-top: 2px solid var(--magenta);
-	margin: 2rem auto;
+	margin: 0 auto 2rem;
 }
 .popularnews p{
 	border-top: none;

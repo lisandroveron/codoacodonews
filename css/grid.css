@@ -1,3 +1,12 @@
+body{
+	display: grid;
+	grid-template-columns: minmax(auto, 960px) minmax(auto, 340px);
+	grid-template-rows: 25% 1fr auto;
+	grid-template-areas: "header header"
+						 "main aside"
+						 "footer footer";
+	justify-content: center;
+}
 header{
 	display: grid;
 	grid-template-columns: 1fr;
@@ -5,6 +14,7 @@ header{
 	grid-template-areas: "date"
 						 "title"
 						 "navbar";
+	grid-area: header;
 }
 header>p{
 	grid-area: date;
@@ -15,6 +25,9 @@ header h1, header>h2{
 }
 header nav{
 	grid-area: navbar;
+}
+main{
+	grid-area: main;
 }
 .mainnews{
 	display: grid;
@@ -27,4 +40,10 @@ header nav{
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: auto 1fr auto;
+}
+aside{
+	grid-area: aside;
+}
+footer{
+	grid-area: footer;
 }

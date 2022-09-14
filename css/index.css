@@ -17,7 +17,6 @@
 body{
 	margin: auto;
 	width: 95%;
-	max-width: 960px;
 }
 main{
 	margin: auto;
@@ -34,7 +33,6 @@ a{
 /* - - - - - H E A D E R - - - - - */
 header{
 	color: black;
-	height: 25%;
 	overflow: hidden;
 	position: relative;
 	margin-bottom: 20px;

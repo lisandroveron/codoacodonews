@@ -1,3 +1,34 @@
+body{
+	display: grid;
+	grid-template-columns: minmax(auto, 960px) minmax(auto, 340px);
+	grid-template-rows: 25% 1fr auto;
+	grid-template-areas: "header header"
+						 "main aside"
+						 "footer footer";
+	justify-content: center;
+}
+header{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas: "date"
+						 "title"
+						 "navbar";
+	grid-area: header;
+}
+header>p{
+	grid-area: date;
+}
+header h1, header>h2{
+	grid-area: title;
+	align-self: center;
+}
+header nav{
+	grid-area: navbar;
+}
+main{
+	grid-area: main;
+}
 .mainnews{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -9,4 +40,10 @@
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: auto 1fr auto;
+}
+aside{
+	grid-area: aside;
+}
+footer{
+	grid-area: footer;
 }

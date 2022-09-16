@@ -1,7 +1,7 @@
 body{
 	display: grid;
-	grid-template-columns: minmax(auto, 960px) minmax(auto, 340px);
-	grid-template-rows: 25% 1fr auto;
+	grid-template-columns: minmax(auto, 3fr) minmax(auto, 1fr);
+	grid-template-rows: 1fr 3fr auto;
 	grid-template-areas: "header header"
 						 "main aside"
 						 "footer footer";
@@ -10,7 +10,7 @@ body{
 header{
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: auto 1fr auto;
+	grid-template-rows: auto 8rem auto;
 	grid-template-areas: "date"
 						 "title"
 						 "navbar";
@@ -24,11 +24,15 @@ header h1, header>h2{
 	align-self: center;
 }
 header nav{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
 	grid-area: navbar;
 }
+
 main{
 	grid-area: main;
 }
+
 .mainnews{
 	display: grid;
 	grid-template-columns: 1fr 1fr;

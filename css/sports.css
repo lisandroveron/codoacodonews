@@ -1,10 +1,32 @@
+/* - - - - - F O N T S - A N D - V A R S - - - - - */
+:root{
+	--grey: #565656;
+	--magenta: #cc1e44;
+}
+@font-face{
+	font-family: news;
+	src: url("../assets/fonts/chomsky.otf");
+}
+@font-face{
+	font-family: letters;
+	src: url("../assets/fonts/italiana.ttf");
+}
+@font-face{
+	font-family: news1;
+	src: url("../assets/fonts/ChakraPetch-Bold.ttf");
+}
 
+/* - - - - END - F O N T S - A N D - V A R S - END - - - - - */
 
+/* - - - - - G E N E R A L - - - - - */
+
+/* - - - - END - G E N E R A L - END - - - - */
+
+/* - - - - - M A I N - - - - - */
 main{
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 2rem;
-    margin-top: 4rem;
+    gap: 4rem;
+    margin-top: 2rem;
 }
 
 .sports-bar a, .sports-bar img{
@@ -14,7 +36,7 @@ main{
 
 .section-tittle{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: left;
     grid-column: 1 / 4
 }
@@ -25,9 +47,19 @@ main{
     justify-items: center;
 }
 
-
-.news-section > div{
+.news-section > section{
     display: grid;
     grid-template: repeat(3,auto);
+    padding-bottom: 2rem;
     gap: 2rem;
 }
+
+/* - - - - END - M A I N - END - - - - */
+
+/* - - - - - A S I D E - - - - - */
+
+aside{
+    display: grid;
+    margin-top:2rem;
+}
+/* - - - - END - A S I D E - END - - - - */

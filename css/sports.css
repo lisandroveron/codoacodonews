@@ -3,20 +3,15 @@
 	--grey: #565656;
 	--magenta: #cc1e44;
 }
-@font-face{
-	font-family: news;
-	src: url("../assets/fonts/chomsky.otf");
-}
-@font-face{
-	font-family: letters;
-	src: url("../assets/fonts/italiana.ttf");
-}
-@font-face{
-	font-family: news1;
-	src: url("../assets/fonts/ChakraPetch-Bold.ttf");
+
+@font-face {
+    font-family: AlfaSalb;
+    src: url("../assets/fonts/AlfaSlabOne-Regular.ttf");
 }
 
+
 /* - - - - END - F O N T S - A N D - V A R S - END - - - - - */
+
 
 /* - - - - - G E N E R A L - - - - - */
 
@@ -54,12 +49,68 @@ main{
     gap: 2rem;
 }
 
+.shortnews{
+	font-size: 1rem;
+}
+
+.shortnews h3{
+	font-size: 2rem;
+    color: black    ;
+}
+
+.shortnews h4{
+	-moz-box-orient: vertical;
+	-ms-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	color: var(--grey);
+	display: -webkit-box;
+	font-size: 1rem;
+	font-weight: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.shortnews img{
+	height: 220px;
+	margin: 15px 0;
+	overflow: hidden;
+	width: 100%;
+}
+
 /* - - - - END - M A I N - END - - - - */
 
 /* - - - - - A S I D E - - - - - */
 
 aside{
-    display: grid;
-    margin-top:2rem;
+    grid-auto-flow: row;
+}
+
+.football-aside{
+    text-align: center;
+    
+}
+
+.field{
+    z-index: -2;
+    max-width: 80%;
+    border-radius: 20px;
+}
+.football-aside p{
+    z-index: 1;
+    transform: translateY(7.25rem);
+
+    font-size: 2rem;
+    font-family: anton;
+    color: #cc1e44;
+}
+
+.club-logo-left{
+    width: 20%;
+    transform: translate(-80%,-170%)
+}
+
+.club-logo-right{
+    width: 20%;
+    transform: translate(80%, -170%);
 }
 /* - - - - END - A S I D E - END - - - - */

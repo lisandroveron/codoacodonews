@@ -15,15 +15,20 @@
 	font-family: news1;
 	src: url("../assets/fonts/ChakraPetch-Bold.ttf");
 }
+@font-face {
+	font-family: AlfaSalb;
+	src: url("../assets/fonts/AlfaSlabOne-Regular.ttf");
+}
 /* - - - - END - F O N T S - A N D - V A R S - END - - - - - */
 
 /* - - - - - G E N E R A L - - - - - */
 body{
 	margin: auto;
-	max-width: 90%;
+	max-width: 70%;
 	gap: 1rem;
 }
 main{
+	display:grid;
 	margin: auto;
 }
 nav{
@@ -44,8 +49,8 @@ header{
 h1{
 	color: var(--magenta);
 	margin: auto;
-	font-family: news1;
-	font-size: 3rem;
+	font-family: AlfaSalb;
+	font-size: 3	em;
 	text-align: center;
 }
 
@@ -71,11 +76,11 @@ header nav a:last-child{
 	font-weight: bold;
 	width: auto;
 }
-.shortnews h3{
+.shortnews h2{
 	font-size: 2rem;
 }
 
-.shortnews h4{
+.shortnews h3{
 	-moz-box-orient: vertical;
 	-ms-box-orient: vertical;
 	-webkit-box-orient: vertical;
@@ -106,7 +111,10 @@ header nav a:last-child{
 /* - - - - END - M A I N - END - - - - */
 
 /* - - - - - A S I D E - - - - - */
-
+aside{
+    display: grid;
+    margin-top:2rem;
+}
 
 /* - - - - END - A S I D E - END - - - - */
 

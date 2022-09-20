@@ -10,24 +10,17 @@
 /* - - - - - H E A D E R - - - - - */
 header{
 	background-color: var(--lightblue);
-	color: black;
-	height: 25%;
-	overflow: hidden;
-	position: relative;
 	z-index: 100;
 }
 header h2{
-	color: transparent;
+	color: var(--magenta);
 	font-family: news;
 	font-size: 5rem;
 	position: relative;
 	text-align: center;
-	top: -10%;
 }
 header nav{
-	bottom: 10%;
-	color: black;
-	position: absolute;
+	z-index: 10;
 }
 .skyicon{
 	height: 50px;
@@ -76,31 +69,11 @@ footer{
 /* - - - - E N D - F O O T E R - E N D - - - - */
 
 /* - - - - - A N I M A T I O N S - - - - - */
-h1{
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-	animation-name: disappear;
-}
-header h2{
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
-	animation-name: appear;
-}
 .sun{
 	animation-duration: 180s;
 	animation-iteration-count: infinite;
 	animation-name: sunrotate;
 	animation-timing-function: linear;
-}
-@keyframes disappear{
-	100%{
-		color: transparent;
-	}
-}
-@keyframes appear{
-	100%{
-		color: var(--magenta);
-	}
 }
 @keyframes sunrotate{
 	100%{

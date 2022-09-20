@@ -31,18 +31,10 @@ a{
 /* - - - - END - G E N E R A L - END - - - - */
 
 /* - - - - - H E A D E R - - - - - */
-<<<<<<< HEAD
 
 header{
 	padding-bottom: 1rem;
 	border-bottom: solid var(--magenta);
-=======
-header{
-	color: black;
-	overflow: hidden;
-	position: relative;
-	margin-bottom: 20px;
->>>>>>> gh-pages
 }
 h1{
 	color: var(--magenta);

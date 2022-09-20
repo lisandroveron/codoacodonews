@@ -1,7 +1,23 @@
+<<<<<<< HEAD
 @media screen and (max-width: 1200px){
+=======
+@media screen and (max-width: 960px){
+	body{
+		grid-template-areas: "header header"
+							 "main main"
+							 "footer footer";
+	}
+	aside{
+		display: none;
+	}
+}
+@media screen and (max-width: 600px){
+	/* - - - - - G R I D - - - - - */
+>>>>>>> 6569cd5cb03b8b28ca4a87d6e57e91f53f285b2d
 	.mainnews{
 		grid-template-columns: repeat(2, 1fr);	
 	}
+<<<<<<< HEAD
 }
 
 @media screen and (max-width: 850px){
@@ -10,6 +26,11 @@
 	}
 	.aside-content_large{
 		grid-column: 1/2;
+=======
+	/* - - - - END - G R I D - END - - - - */
+	h1, header h2{
+		font-size: 3rem;
+>>>>>>> 6569cd5cb03b8b28ca4a87d6e57e91f53f285b2d
 	}
 }
 
@@ -17,9 +38,12 @@
 	:root{
 		font-size: 9px;
 	}
+<<<<<<< HEAD
 	.mainnews{
 		grid-template-columns: 1fr;	
 	}
+=======
+>>>>>>> 6569cd5cb03b8b28ca4a87d6e57e91f53f285b2d
 }
 @media screen and (max-width: 400px){
 	.infotable tr:nth-child(1) th:nth-child(n+2){

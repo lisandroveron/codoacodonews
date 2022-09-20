@@ -8,13 +8,36 @@
 	font-family: news;
 	src: url("../assets/fonts/ChakraPetch-Bold.ttf");
 }
+<<<<<<< HEAD
 
+=======
+@font-face{
+	font-family: news1;
+	src: url("../assets/fonts/ChakraPetch-Bold.ttf");
+}
+@font-face {
+	font-family: AlfaSalb;
+	src: url("../assets/fonts/AlfaSlabOne-Regular.ttf");
+}
+>>>>>>> 6569cd5cb03b8b28ca4a87d6e57e91f53f285b2d
 /* - - - - END - F O N T S - A N D - V A R S - END - - - - - */
 
 /* - - - - - G E N E R A L - - - - - */
 body{
 	margin: auto;
+<<<<<<< HEAD
 	max-width: 80vw;
+=======
+	max-width: 70%;
+	gap: 1rem;
+}
+main{
+	display:grid;
+	margin: auto;
+}
+nav{
+	text-align: center;
+>>>>>>> 6569cd5cb03b8b28ca4a87d6e57e91f53f285b2d
 }
 
 a{
@@ -25,9 +48,14 @@ a{
 /* - - - - END - G E N E R A L - END - - - - */
 
 /* - - - - - H E A D E R - - - - - */
+header{
+	color: black;
+	position: relative;
+	gap: 1rem;
+}
 h1{
-	height: 25%;
 	color: var(--magenta);
+<<<<<<< HEAD
 	font-family: news;
 	font-size: 4em;
 	text-align: center;
@@ -75,6 +103,28 @@ main{
 	display: grid;
 	grid-template-rows: auto auto auto auto;
 	font-size: 1.2rem;
+=======
+	margin: auto;
+	font-family: AlfaSalb;
+	font-size: 3	em;
+	text-align: center;
+}
+
+header nav a{
+	border-right: 3px solid var(--magenta);
+	font-size: 1.25rem;
+}
+
+header nav a:last-child{
+	border-right: none;
+}
+
+/* - - - - END - H E A D E R - END - - - - */
+
+/* - - - - - M A I N - - - - - */
+.shortnews{
+	font-size: 1rem;
+>>>>>>> 6569cd5cb03b8b28ca4a87d6e57e91f53f285b2d
 }
 .shortnews p, .principal-new p{
 	border-top: 2px solid var(--magenta);
@@ -83,7 +133,15 @@ main{
 	font-weight: bold;
 	width: auto;
 }
+<<<<<<< HEAD
 .shortnews h3, .principal-new h3{
+=======
+.shortnews h2{
+	font-size: 2rem;
+}
+
+.shortnews h3{
+>>>>>>> 6569cd5cb03b8b28ca4a87d6e57e91f53f285b2d
 	-moz-box-orient: vertical;
 	-ms-box-orient: vertical;
 	-webkit-box-orient: vertical;
@@ -99,16 +157,44 @@ main{
 	width: 100%;
 	margin: 0.8rem 0;
 }
+<<<<<<< HEAD
 .aside-content{
 	grid-area: 1 / 2 / span 2 / span 1;
 	display: grid;
 	gap: 1rem;
+=======
+.popularnews{
+	border-top: 2px solid var(--magenta);
+	margin: 0 auto 2rem;
+>>>>>>> 6569cd5cb03b8b28ca4a87d6e57e91f53f285b2d
 }
 .aside-content_large{
 	grid-column: 1 / 3;
 }
+<<<<<<< HEAD
 /* - - - - END - M A I N - END - - - - */
 
 /* *{
     border: 0.5px solid;
 } */
+=======
+.popularnews img{
+	height: auto;
+}
+/* - - - - END - M A I N - END - - - - */
+
+/* - - - - - A S I D E - - - - - */
+aside{
+    display: grid;
+    margin-top:2rem;
+}
+
+/* - - - - END - A S I D E - END - - - - */
+
+/* - - - - - F O O T E R - - - - - */
+footer p{
+	font-size: 1.5rem;
+	text-align: center;
+}
+/* - - - - END - F O O T E R - END - - - - */
+>>>>>>> 6569cd5cb03b8b28ca4a87d6e57e91f53f285b2d

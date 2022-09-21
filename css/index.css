@@ -39,7 +39,6 @@ a{
 header{
 	color: black;
 	position: relative;
-	gap: 1rem;
 }
 h1{
 	color: var(--magenta);
@@ -58,9 +57,6 @@ header nav a:last-child{
 /* - - - - END - H E A D E R - END - - - - */
 
 /* - - - - - M A I N - - - - - */
-.shortnews{
-	font-size: 1rem;
-}
 .shortnews p{
 	border-top: 2px solid var(--magenta);
 	color: var(--magenta);

@@ -25,11 +25,6 @@
 body{
 	margin: auto;
 	max-width: 70%;
-	gap: 1rem;
-}
-main{
-	display:grid;
-	margin: auto;
 }
 nav{
 	text-align: center;
@@ -50,19 +45,16 @@ h1{
 	color: var(--magenta);
 	margin: auto;
 	font-family: AlfaSalb;
-	font-size: 3	em;
+	font-size: 3rem;
 	text-align: center;
 }
-
 header nav a{
 	border-right: 3px solid var(--magenta);
 	font-size: 1.25rem;
 }
-
 header nav a:last-child{
 	border-right: none;
 }
-
 /* - - - - END - H E A D E R - END - - - - */
 
 /* - - - - - M A I N - - - - - */
@@ -79,7 +71,6 @@ header nav a:last-child{
 .shortnews h2{
 	font-size: 2rem;
 }
-
 .shortnews h3{
 	-moz-box-orient: vertical;
 	-ms-box-orient: vertical;
@@ -111,10 +102,6 @@ header nav a:last-child{
 /* - - - - END - M A I N - END - - - - */
 
 /* - - - - - A S I D E - - - - - */
-aside{
-    display: grid;
-    margin-top:2rem;
-}
 
 /* - - - - END - A S I D E - END - - - - */
 

@@ -3,13 +3,10 @@
 	--grey: #565656;
 	--magenta: #cc1e44;
 }
-
 @font-face {
     font-family: AlfaSalb;
     src: url("../assets/fonts/AlfaSlabOne-Regular.ttf");
 }
-
-
 /* - - - - END - F O N T S - A N D - V A R S - END - - - - - */
 
 
@@ -19,23 +16,18 @@
 
 /* - - - - - M A I N - - - - - */
 main{
-    display: grid;
     gap: 4rem;
-    margin-top: 2rem;
 }
-
 .sports-bar a, .sports-bar img{
     width: 2.8rem;
     height: 2.8rem;
 }
-
 .section-tittle{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2.5rem;
     text-align: left;
     grid-column: 1 / 4
 }
-
 .sports-bar{
     display: grid;
     grid-template-columns: repeat(5, 1fr );
@@ -48,16 +40,10 @@ main{
     padding-bottom: 2rem;
     gap: 2rem;
 }
-
-.shortnews{
-	font-size: 1rem;
-}
-
 .shortnews h3{
 	font-size: 2rem;
     color: black    ;
 }
-
 .shortnews h4{
 	-moz-box-orient: vertical;
 	-ms-box-orient: vertical;
@@ -76,7 +62,6 @@ main{
 	overflow: hidden;
 	width: 100%;
 }
-
 /* - - - - END - M A I N - END - - - - */
 
 /* - - - - - A S I D E - - - - - */
@@ -84,12 +69,10 @@ main{
 aside{
     grid-auto-flow: row;
 }
-
 .football-aside{
     text-align: center;
     
 }
-
 .field{
     z-index: -2;
     max-width: 80%;
@@ -103,12 +86,10 @@ aside{
     font-family: anton;
     color: #cc1e44;
 }
-
 .club-logo-left{
     width: 20%;
     transform: translate(-80%,-170%)
 }
-
 .club-logo-right{
     width: 20%;
     transform: translate(80%, -170%);

@@ -1,11 +1,12 @@
 body{
 	display: grid;
-	grid-template-columns: minmax(auto, 960px) minmax(auto, 340px);
+	grid-template-columns: 3fr 1fr;
 	grid-template-rows: 25% 1fr auto;
 	grid-template-areas: "header header"
 						 "main aside"
 						 "footer footer";
 	justify-content: center;
+	gap: 1rem;
 }
 header{
 	display: grid;
@@ -15,6 +16,7 @@ header{
 						 "title"
 						 "navbar";
 	grid-area: header;
+	gap: 1rem;
 }
 header>p{
 	grid-area: date;
@@ -24,6 +26,8 @@ header h1, header>h2{
 	align-self: center;
 }
 header nav{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
 	grid-area: navbar;
 }
 main{

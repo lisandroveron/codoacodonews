@@ -11,14 +11,18 @@
 	font-family: letters;
 	src: url("../assets/fonts/italiana.ttf");
 }
+@font-face{
+	font-family: news1;
+	src: url("../assets/fonts/ChakraPetch-Bold.ttf");
+}
+@font-face {
+	font-family: AlfaSalb;
+	src: url("../assets/fonts/AlfaSlabOne-Regular.ttf");
+}
 /* - - - - END - F O N T S - A N D - V A R S - END - - - - - */
 
 /* - - - - - G E N E R A L - - - - - */
 body{
-	margin: auto;
-	width: 95%;
-}
-main{
 	margin: auto;
 }
 nav{
@@ -33,29 +37,34 @@ a{
 /* - - - - - H E A D E R - - - - - */
 header{
 	color: black;
-	overflow: hidden;
 	position: relative;
-	margin-bottom: 20px;
 }
 h1{
 	color: var(--magenta);
 	margin: auto;
-	font-family: news;
-	font-size: 5rem;
+	font-family: AlfaSalb;
+	font-size: 3rem;
 	text-align: center;
+}
+header nav a{
+	border-right: 3px solid var(--magenta);
+	font-size: 1.25rem;
+}
+header nav a:last-child{
+	border-right: none;
 }
 /* - - - - END - H E A D E R - END - - - - */
 
 /* - - - - - M A I N - - - - - */
-.shortnews{
-	font-size: 1.2rem;
-}
 .shortnews p{
 	border-top: 2px solid var(--magenta);
 	color: var(--magenta);
 	display: inline-block;
 	font-weight: bold;
 	width: auto;
+}
+.shortnews h2{
+	font-size: 2rem;
 }
 .shortnews h3{
 	-moz-box-orient: vertical;
@@ -86,3 +95,14 @@ h1{
 	height: auto;
 }
 /* - - - - END - M A I N - END - - - - */
+
+/* - - - - - A S I D E - - - - - */
+
+/* - - - - END - A S I D E - END - - - - */
+
+/* - - - - - F O O T E R - - - - - */
+footer p{
+	font-size: 1.5rem;
+	text-align: center;
+}
+/* - - - - END - F O O T E R - END - - - - */

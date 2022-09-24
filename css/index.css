@@ -66,6 +66,9 @@ header nav a:last-child{
 .shortnews h2{
 	font-size: 2rem;
 }
+.shortnews div{
+	overflow: hidden;
+}
 .shortnews h3{
 	-moz-box-orient: vertical;
 	-ms-box-orient: vertical;
@@ -79,9 +82,6 @@ header nav a:last-child{
 	text-overflow: ellipsis;
 }
 .shortnews img{
-	height: 220px;
-	margin: 15px 0;
-	overflow: hidden;
 	width: 100%;
 }
 .popularnews{

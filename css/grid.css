@@ -43,7 +43,11 @@ main{
 .shortnews{
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: auto 1fr auto;
+	grid-template-rows: auto 1fr auto auto;
+}
+.shortnews div{
+	align-self: center;
+	justify-self: center;
 }
 aside{
 	grid-area: aside;

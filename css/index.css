@@ -84,16 +84,6 @@ header nav a:last-child{
 .shortnews img{
 	width: 100%;
 }
-.popularnews{
-	border-top: 2px solid var(--magenta);
-	margin: 0 auto 2rem;
-}
-.popularnews p{
-	border-top: none;
-}
-.popularnews img{
-	height: auto;
-}
 /* - - - - END - M A I N - END - - - - */
 
 /* - - - - - A S I D E - - - - - */

@@ -1,0 +1,177 @@
+ nav{
+    /* background-color: rgba(238, 240, 246, 0.982); */
+    border-top: 1px rgb(225, 214, 214) solid;
+    border-bottom: 1px rgb(225, 214, 214) solid;
+    margin: 20px;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+nav ul li {
+    display: inline-block;
+
+}
+nav ul li a {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 9px 100.5px;
+    display: block;
+    margin-left: 0;
+
+}
+nav ul li a:hover {
+    /* background-color: rgb(218, 213, 231); */
+    color: var(--magenta);
+}
+
+
+
+h1{
+    padding: 1em;
+}
+
+
+
+
+
+/*----------DOLAR---------*/
+/* li{
+    float: left;
+    padding: 4px ;
+    list-style: none;
+
+
+} */
+.quotes{
+    background-color:white;
+    border-top: none;
+    border-bottom: none;
+
+}
+.quotes ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+.quotes ul li {
+    display: inline-block;
+}
+.quotes ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0px 30px;
+    display: block;
+    border-right: 3px solid var(--magenta);
+}
+
+.quotes ul li a:hover {
+    color: var(--magenta);
+    background-color: white;
+}
+
+
+
+/*-----MAIN------*/
+
+
+
+.articles-container{
+    display: grid;
+    gap: 10px;
+    margin: 20px;
+    grid-template-areas:
+
+        "article1 article1 aside"
+        "article2 article3 aside"
+        "article4 article5 aside"
+        "article6 article7 aside"
+    ;
+}
+
+.article1{grid-area: article1;}
+.article2{grid-area: article2;}
+.article3{grid-area: article3;}
+.article4{grid-area: article4;}
+.article5{grid-area: article5;}
+.article6{grid-area: article6;}
+.article7{grid-area: article7;}
+aside{grid-area: aside;}
+
+article{
+    /* border: 1px solid; */
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/*IMAGES*/
+
+img{
+    object-fit: cover;
+    /* border: 2px solid; */
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+
+
+
+}
+.img1{
+    width: 100%;
+    height: 400px;
+
+}
+
+
+
+
+
+
+
+/*TITLES*/
+
+h2{
+    /* border: 1px solid; */
+    width: 500px;
+    height: 25px;
+
+}
+
+p{
+    margin: 0;
+    color: var(--magenta);
+    font-weight: bold;
+}
+
+h3{
+    -moz-box-orient: vertical;
+	-ms-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	color: var(--grey);
+	display: -webkit-box;
+	font-size: 1rem;
+	font-weight: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+
+
+
+/*ARTICULOS*/
+
+.article2,.article3,.article4,.article5,.article6,.article7{
+    border-top: 2px solid var(--magenta);
+}
+
+
+

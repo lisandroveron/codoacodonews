@@ -39,11 +39,12 @@ header nav{
 /* - - - - END - H E A D E R - END - - - - */
 
 /* - - - - - M A I N - - - - - */
-table{
+main table{
 	margin: auto;
 	text-align: center;
+	width: 100%;
 }
-td img{
+main td img{
 	height: 50px;
 	width: 50px;
 }
@@ -52,13 +53,50 @@ td img{
 	grid-gap: 5px;
 	grid-template-columns: 1em minmax(min-content, max-content);
 	grid-template-rows: auto repeat(3, 1em);
+	justify-content: center;
 	justify-items: left;
+	margin-top: 10px;
 }
 .infocell img{
 	height: auto;
 	width: auto;
 }
 /* - - - - END - M A I N - END - - - - */
+
+/* - - - - - A S I D E - - - - - */
+aside{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 50px 50px 1fr;
+	background-color: #110e3c;
+	color: white;
+	grid-template-areas: "day"
+						 "icon"
+						 "temp";
+	grid-row-gap: 20px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+aside h2{
+	justify-self: center;
+	align-self: center;
+	grid-area: day;
+}
+aside img{
+	grid-area: icon;
+	height: 50px;
+	justify-self: center;
+	align-self: center;
+}
+aside>p:nth-child(3){
+	grid-area: temp;
+	font-size: 5em;
+	justify-self: center;
+}
+aside p>span{
+	font-size: 1rem;
+}
+/* - - - - E N D - A S I D E - E N D - - - - */
 
 /* - - - - - F O O T E R - - - - - */
 footer{

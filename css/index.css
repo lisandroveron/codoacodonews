@@ -24,6 +24,7 @@
 /* - - - - - G E N E R A L - - - - - */
 body{
 	margin: auto;
+	max-width: 1400px;
 }
 nav{
 	text-align: center;

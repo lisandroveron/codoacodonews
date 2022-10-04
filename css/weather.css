@@ -67,33 +67,37 @@ main td img{
 aside{
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 50px 50px 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 	background-color: #110e3c;
 	color: white;
 	grid-template-areas: "day"
 						 "icon"
 						 "temp";
-	grid-row-gap: 20px;
+	grid-gap: 20px 20px;
 	border-top-right-radius: 25px;
 	border-bottom-right-radius: 25px;
+	justify-items: center;
 }
 aside h2{
-	justify-self: center;
+	/*justify-self: center;*/
 	align-self: center;
 	grid-area: day;
 }
 aside img{
 	grid-area: icon;
-	height: 50px;
-	justify-self: center;
+	height: 100px;
+	/*justify-self: right;*/
 	align-self: center;
 }
-aside>p:nth-child(3){
+aside #temp{
 	grid-area: temp;
 	font-size: 5em;
-	justify-self: center;
+	/*justify-self: left;*/
+	line-height: 1ex;
+	align-self: center;
 }
 aside p>span{
+	vertical-align: text-top;
 	font-size: 1rem;
 }
 /* - - - - E N D - A S I D E - E N D - - - - */

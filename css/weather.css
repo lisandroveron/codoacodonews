@@ -1,21 +1,12 @@
 /* - - - - - F O N T S - A N D - V A R S - - - - - */
 :root{
-	--blue: rgb(14, 50, 142);
-	--lightblue: rgb(141, 172, 252);
+	--sky: rgb(141, 172, 252);
 }
 /* - - - - END - F O N T S - A N D - V A R S - END - - - - - */
 
 /* - - - - - H E A D E R - - - - - */
 header{
-	background-color: var(--lightblue);
-	z-index: 100;
-}
-header h2{
-	color: var(--magenta);
-	font-family: news;
-	font-size: 5rem;
-	position: relative;
-	text-align: center;
+	background-color: var(--sky);
 }
 header nav{
 	z-index: 10;

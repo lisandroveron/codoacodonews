@@ -6,7 +6,7 @@ body{
 						 "main aside"
 						 "footer footer";
 	justify-content: center;
-	gap: 1rem;
+	grid-row-gap: 1rem;
 }
 header{
 	display: grid;
@@ -16,7 +16,7 @@ header{
 						 "title"
 						 "navbar";
 	grid-area: header;
-	gap: 1rem;
+	grid-row-gap: 1rem;
 }
 header>p{
 	grid-area: date;

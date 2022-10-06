@@ -1,4 +1,4 @@
-// Temperature showed in <aside>
+// Get the temperature element showed in <aside>
 const temp = document.getElementById("temp");
 
 // Get current date and hour

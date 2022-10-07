@@ -10,7 +10,7 @@
 }
 @media screen and (max-width: 600px){
 	/* - - - - - G R I D - - - - - */
-	.mainnews{
+	main{
 		grid-template-columns: auto;
 		grid-template-rows: repeat(auto-fill, auto);
 		grid-gap: 1.5rem 0;
@@ -24,10 +24,10 @@
 	}
 }
 @media screen and (max-width: 400px){
-	.infotable tr:nth-child(1) th:nth-child(n+2){
+	main table tr:nth-child(1) th:nth-child(n+2){
 		display: none;
 	}
-	.infotable tr td:nth-child(n+2){
+	main table tr td:nth-child(n+2){
 		display: none;
 	}
 }

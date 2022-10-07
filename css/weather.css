@@ -34,6 +34,9 @@ header nav{
 /* - - - - END - H E A D E R - END - - - - */
 
 /* - - - - - M A I N - - - - - */
+main{
+	display: initial;
+}
 main table{
 	margin: auto;
 	text-align: center;
@@ -51,7 +54,7 @@ main table, main table tr{
 main table th, main table td{
 	background-color: #f3e4b7;
 }
-/* The next block is the hour in leftside of weather table */
+/* The next block is the hour column */
 main table tr td:first-child{
 	font-family: clock;
 	font-size: 1.5em;
@@ -63,6 +66,7 @@ main table tr td:first-child{
 main table tr:first-child th:first-child{
 	border-top-left-radius: 25px;
 	width: 2rem;
+	border-right: none;
 }
 main table tr:last-child td:first-child{
 	border-top-right-radius: 25px;

@@ -141,3 +141,18 @@ footer{
 	}
 }
 /* - - - - E N D - A N I M A T I O N S - E N D - - - - */
+
+/* - - - - - R E S P O N S I V E - - - - - */
+@media screen and (max-width: 600px){
+	main table tr:first-child th:nth-child(n+5),
+	main table tr td:nth-child(n+5){
+		display: none;
+	}
+}
+@media screen and (max-width: 400px){
+	main table tr:first-child th:nth-child(n+3),
+	main table tr td:nth-child(n+3){
+		display: none;
+	}
+}
+/* - - - - E N D - R E S P O N S I V E - E N D - - - - */

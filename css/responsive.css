@@ -10,7 +10,14 @@
 }
 @media screen and (max-width: 600px){
 	/* - - - - - G R I D - - - - - */
+	body{
+		grid-template-areas: "header"
+							 "main"
+							 "footer";
+		grid-template-columns: auto;
+	}
 	main{
+		grid-template-areas: "popular";
 		grid-template-columns: auto;
 		grid-template-rows: repeat(auto-fill, auto);
 		grid-gap: 1.5rem 0;
@@ -21,13 +28,5 @@
 	}
 	.shortnews{
 		font-size: 1rem;
-	}
-}
-@media screen and (max-width: 400px){
-	main table tr:nth-child(1) th:nth-child(n+2){
-		display: none;
-	}
-	main table tr td:nth-child(n+2){
-		display: none;
 	}
 }

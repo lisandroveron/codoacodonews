@@ -27,7 +27,7 @@ header h1{
 }
 header nav{
 	display: grid;
-	grid-template-columns: repeat(4,1fr);
+	grid-template-columns: repeat(4, auto);
 	grid-area: navbar;
 }
 main{

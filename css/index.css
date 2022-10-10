@@ -42,9 +42,9 @@ header{
 }
 h1{
 	color: var(--magenta);
-	margin: auto;
 	font-family: AlfaSalb;
 	font-size: 3rem;
+	margin: auto;
 	text-align: center;
 }
 header nav a{
@@ -65,7 +65,11 @@ header nav a:last-child{
 	width: auto;
 }
 .shortnews h2{
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	display: -webkit-box;
 	font-size: 2rem;
+	overflow: hidden;
 }
 .shortnews div{
 	overflow: hidden;

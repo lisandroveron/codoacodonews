@@ -20,9 +20,9 @@ main{
 /* - - - - END - G E N E R A L - END - - - - */
 
 /* - - - - - M A I N - - - - - */
-.section-tittle{
-    font-size: 2.5rem;
-    text-align: left;
+main h2{
+    grid-column: 1 / 7;
+    font-size: 2rem;
 }
 .principal-new-container{
     grid-column: 2 / 7;
@@ -89,6 +89,20 @@ main{
     box-sizing: border-box;
     width: 80%;
     border: 1px solid #cc1e44;
+}
+.news-by-sport{
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.5rem;
+}
+.news-by-sport img{
+    height: 150px;
+}
+.section-tittle{
+    grid-column: 1/4;
+    font-size: 2.5rem;
+    text-align: left;
 }
 /* - - - - END - M A I N - END - - - - */
 

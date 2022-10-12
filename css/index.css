@@ -24,6 +24,7 @@
 /* - - - - - G E N E R A L - - - - - */
 body{
 	margin: auto;
+	max-width: 1400px;
 }
 nav{
 	text-align: center;
@@ -41,9 +42,9 @@ header{
 }
 h1{
 	color: var(--magenta);
-	margin: auto;
 	font-family: AlfaSalb;
 	font-size: 3rem;
+	margin: auto;
 	text-align: center;
 }
 header nav a{
@@ -64,7 +65,14 @@ header nav a:last-child{
 	width: auto;
 }
 .shortnews h2{
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	display: -webkit-box;
 	font-size: 2rem;
+	overflow: hidden;
+}
+.shortnews div{
+	overflow: hidden;
 }
 .shortnews h3{
 	-moz-box-orient: vertical;
@@ -79,20 +87,7 @@ header nav a:last-child{
 	text-overflow: ellipsis;
 }
 .shortnews img{
-	height: 220px;
-	margin: 15px 0;
-	overflow: hidden;
 	width: 100%;
-}
-.popularnews{
-	border-top: 2px solid var(--magenta);
-	margin: 0 auto 2rem;
-}
-.popularnews p{
-	border-top: none;
-}
-.popularnews img{
-	height: auto;
 }
 /* - - - - END - M A I N - END - - - - */
 

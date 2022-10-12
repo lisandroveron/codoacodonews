@@ -13,7 +13,6 @@
 </head>
 <body>
 	<header>
-		<p>Sabado, 3 de Septiembre de 2022</p>
 		<img class="skyicon sun" src="../assets/icons/weather/headersun.svg" alt="">
 		<svg class="waves" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
 			<path 
@@ -27,190 +26,41 @@
 				L 100 100, 0 100 Z" 
 			stroke-width="0" stroke="black" />
 		</svg>
-		<h2>El clima</h2>
+		<h1>El clima</h1>
 		<nav>
 			<a href="../index.html">Inicio</a>
 			<a href="weather.html">Clima</a>
-			<a href="">Deportes</a>
+			<a href="sports.html">Deportes</a>
 			<a href="">Finanzas</a>
 		</nav>
 	</header>
 	<main>
-		<table class="infotable">
-			<tr>
-				<th>Hoy</th>
-				<th>Mañana</th>
-				<th>Pasado</th>
+		<table>
+			<tr id="weatherRow0">
+				<th></th>
 			</tr>
-			<tr>
-				<!-- Today -->
-				<td>
-					<img src="../assets/icons/weather/blackcloudy.svg" alt="">
-					<p>03:00</p>
-					<div class="infocell">
-						<img src="../assets/icons/weather/thermometer.svg" alt="">
-						<p class="celsius">11°</p>
-						<img src="../assets/icons/weather/water.svg" alt="">
-						<p>0 mm</p>
-						<img src="../assets/icons/weather/wind.svg" alt="">
-						<p>N 3m/s</p>
-					</div>
-				</td>
-				<!-- Tomorrow -->
-				<td>
-					<img src="../assets/icons/weather/blackcloud.svg" alt="">
-					<p>03:00</p>
-					<div class="infocell">
-						<img src="../assets/icons/weather/thermometer.svg" alt="">
-						<p class="celsius">5°</p>
-						<img src="../assets/icons/weather/water.svg" alt="">
-						<p>0.25-1 mm</p>
-						<img src="../assets/icons/weather/wind.svg" alt="">
-						<p>SO 3m/s</p>
-					</div>
-				</td>
-				<!-- Day after tomorrow -->
-				<td>
-					<img src="../assets/icons/weather/blackmoon.svg" alt="">
-					<p>03:00</p>
-					<div class="infocell">
-						<img src="../assets/icons/weather/thermometer.svg" alt="">
-						<p class="celsius">2°</p>
-						<img src="../assets/icons/weather/water.svg" alt="">
-						<p>0.25-1 mm</p>
-						<img src="../assets/icons/weather/wind.svg" alt="">
-						<p>SO 2m/s</p>
-					</div>
-				</td>
+			<tr id="weatherRow1">
+				<td>03:00</td>
 			</tr>
-			<tr>
-				<!-- Today -->
-				<td>
-					<img src="../assets/icons/weather/blacksun.svg" alt="">
-					<p>09:00</p>
-					<div class="infocell">
-						<img src="../assets/icons/weather/thermometer.svg" alt="">
-						<p class="celsius">23°</p>
-						<img src="../assets/icons/weather/water.svg" alt="">
-						<p>0 mm</p>
-						<img src="../assets/icons/weather/wind.svg" alt="">
-						<p>N 2m/s</p>
-					</div>
-				</td>
-				<!-- Tomorrow -->
-				<td>
-					<img src="../assets/icons/weather/partialsun.svg" alt="">
-					<p>09:00</p>
-					<div class="infocell">
-						<img src="../assets/icons/weather/thermometer.svg" alt="">
-						<p class="celsius">11°</p>
-						<img src="../assets/icons/weather/water.svg" alt="">
-						<p>0.25-1 mm</p>
-						<img src="../assets/icons/weather/wind.svg" alt="">
-						<p>SO 3m/s</p>
-					</div>
-				</td>
-				<!-- Day after tomorrow -->
-				<td>
-					<img src="../assets/icons/weather/blacksun.svg" alt="">
-					<p>09:00</p>
-					<div class="infocell">
-						<img src="../assets/icons/weather/thermometer.svg" alt="">
-						<p class="celsius">14°</p>
-						<img src="../assets/icons/weather/water.svg" alt="">
-						<p>0.25-1 mm</p>
-						<img src="../assets/icons/weather/wind.svg" alt="">
-						<p>SO 3m/s</p>
-					</div>
-				</td>
+			<tr id="weatherRow2">
+				<td>09:00</td>
 			</tr>
-			<tr>
-				<!-- Today -->
-				<td>
-					<img src="../assets/icons/weather/rainyday.svg" alt="">
-					<p>15:00</p>
-					<div class="infocell">
-						<img src="../assets/icons/weather/thermometer.svg" alt="">
-						<p class="celsius">16°</p>
-						<img src="../assets/icons/weather/water.svg" alt="">
-						<p>0-0.25 mm/h</p>
-						<img src="../assets/icons/weather/wind.svg" alt="">
-						<p>S 3m/s</p>
-					</div>
-				</td>
-				<!-- Tomorrow -->
-				<td>
-					<img src="../assets/icons/weather/blacksun.svg" alt="">
-					<p>15:00</p>
-					<div class="infocell">
-						<img src="../assets/icons/weather/thermometer.svg" alt="">
-						<p class="celsius">12°</p>
-						<img src="../assets/icons/weather/water.svg" alt="">
-						<p>0.25-1 mm</p>
-						<img src="../assets/icons/weather/wind.svg" alt="">
-						<p>SO 3m/s</p>
-					</div>
-				</td>
-				<!-- Day after tomorrow -->
-				<td>
-					<img src="../assets/icons/weather/blacksun.svg" alt="">
-					<p>15:00</p>
-					<div class="infocell">
-						<img src="../assets/icons/weather/thermometer.svg" alt="">
-						<p class="celsius">13°</p>
-						<img src="../assets/icons/weather/water.svg" alt="">
-						<p>0.25-1 mm</p>
-						<img src="../assets/icons/weather/wind.svg" alt="">
-						<p>S 2m/s</p>
-					</div>
-				</td>
+			<tr id="weatherRow3">
+				<td>15:00</td>
 			</tr>
-			<tr>
-				<!-- Today -->
-				<td>
-					<img src="../assets/icons/weather/rainynight.svg" alt="">
-					<p>21:00</p>
-					<div class="infocell">
-						<img src="../assets/icons/weather/thermometer.svg" alt="">
-						<p class="celsius">8°</p>
-						<img src="../assets/icons/weather/water.svg" alt="">
-						<p>0.25-1 mm</p>
-						<img src="../assets/icons/weather/wind.svg" alt="">
-						<p>S 3m/s</p>
-					</div>
-				</td>
-				<!-- Tomorrow -->
-				<td>
-					<img src="../assets/icons/weather/blackmoon.svg" alt="">
-					<p>21:00</p>
-					<div class="infocell">
-						<img src="../assets/icons/weather/thermometer.svg" alt="">
-						<p class="celsius">5°</p>
-						<img src="../assets/icons/weather/water.svg" alt="">
-						<p>0.25-1 mm</p>
-						<img src="../assets/icons/weather/wind.svg" alt="">
-						<p>SO 2m/s</p>
-					</div>
-				</td>
-				<!-- Day after tomorrow -->
-				<td>
-					<img src="../assets/icons/weather/blackmoon.svg" alt="">
-					<p>21:00</p>
-					<div class="infocell">
-						<img src="../assets/icons/weather/thermometer.svg" alt="">
-						<p class="celsius">6°</p>
-						<img src="../assets/icons/weather/water.svg" alt="">
-						<p>0.25-1 mm</p>
-						<img src="../assets/icons/weather/wind.svg" alt="">
-						<p>E 2m/s</p>
-					</div>
-				</td>
+			<tr id="weatherRow4">
+				<td>21:00</td>
 			</tr>
 		</table>
 	</main>
-	<aside></aside>
+	<aside>
+		<h2>Ahora</h2>
+		<img src="../assets/icons/weather/sun.svg" alt="">
+		<p id="temp">0<span>°C</span></p>
+	</aside>
 	<footer>
 		<p>Diario Codo a Codo. © Todos los derechos reservados. 2022</p>
 	</footer>
+	<script type="text/javascript" src="../js/weather.js"></script>
 </body>
 </html>

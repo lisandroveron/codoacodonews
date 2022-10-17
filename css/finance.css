@@ -142,6 +142,7 @@
     left: 35%;
     position: relative;
     letter-spacing: 6px;
+    display: inline-block;
 
 }
 

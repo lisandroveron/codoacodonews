@@ -1,11 +1,175 @@
- nav{
+*{
+    /* background-color: aliceblue; */
+    background-color: #fff;
+}
+
+.container-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+
+    border-top: 1px solid var(--magenta);
+    border-bottom: 1px solid var(--magenta);
+
+
+}
+
+.son-title1{
+    width: 65%;
+    /* background: var(--magenta); */
+    background: linear-gradient(rgba(234, 234, 234, 0.7),rgba(234, 171, 172, 0.70))
+    ,url(../assets/img/finance/header.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
+
+.title-spam{
+    background: none;
+}
+
+.title-spam p{
+    background: none;
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 50px;
+
+
+}
+
+.title-spam1{
+    background: none ;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    /* border: 1px solid rgba(74, 6, 6,0.5); */
+    padding: 0.5rem;
+    align-items: center;
+
+
+}
+
+.title-spam1 p{
+    background: none;
+    color: rgba(0, 0, 0, 0.80);
+    padding: 1rem;
+
+    text-align: center;
+}
+
+.button-spam:hover{
+    background-color: aqua;
+    transition: 2s;
+}
+
+
+
+
+
+.button-spam{
+
+    width: 30%;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: rgba(252, 92, 94, 0.7);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.son-title {
+    height: 200px;
+    width: 35%;
+    border: 1px;
+    position: relative;
+
+
+
+
+}
+
+.title{
+    font-size: 150px;
+    position: absolute;
+    right: 15%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    left: 35%; */
+
+}
+
+.title1{
+    position: relative;
+
+    top: 45%;
+
+
+    width: 100%;
+}
+
+.title1 p{
+
+    /* left: 40%; */
+    left: 35%;
+    position: relative;
+    letter-spacing: 6px;
+
+}
+
+
+
+.title2{
+
+    position: absolute;
+    top: 75%;
+    /* left: 40%; */
+    left: 35%;
+    background: none;
+}
+
+
+
+
+
+
+
+
+nav{
     /* background-color: rgba(238, 240, 246, 0.982); */
     border-top: 1px rgb(225, 214, 214) solid;
     border-bottom: 1px rgb(225, 214, 214) solid;
     margin: 20px;
 }
 nav ul{
-    list-style: none;
     margin: 0;
     padding:0;
 }
@@ -19,57 +183,91 @@ nav ul li a {
     padding: 9px 100.5px;
     display: block;
     margin-left: 0;
+    transition: all 0.5s ease;
+    font-size: medium;
 
 }
 nav ul li a:hover {
     /* background-color: rgb(218, 213, 231); */
     color: var(--magenta);
+    border-right: 3px solid var(--magenta);
+    border-left: 3px solid var(--magenta);
+    border-radius: 15px ;
 }
 
 
-
-h1{
-    padding: 1em;
-}
 
 
 
 
 
 /*----------DOLAR---------*/
-/* li{
-    float: left;
-    padding: 4px ;
-    list-style: none;
 
-
-} */
 .quotes{
-    background-color:white;
-    border-top: none;
-    border-bottom: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 15px;
+
 
 }
-.quotes ul{
-    list-style: none;
-    margin: 0;
-    padding:0;
-}
-.quotes ul li {
-    display: inline-block;
-}
-.quotes ul li a {
-    color: black;
-    text-decoration: none;
-    padding: 0px 30px;
-    display: block;
-    border-right: 3px solid var(--magenta);
+
+.quotes-type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.quotes ul li a:hover {
+.quotes-type:hover{
     color: var(--magenta);
-    background-color: white;
+    border-right: 3px solid var(--magenta);
+    border-left: 3px solid var(--magenta);
+    border-radius: 15px ;
+    padding: 0 30px;
+    transition: all 0.5s ease;
+
 }
+
+
+.quotes-title{
+    color:rgb(0, 0, 0);
+    font-weight: normal;
+    font-size: large;
+
+
+
+}
+
+.quotes-number{
+    /* border-right: 3px solid var(--magenta); */
+    padding: 0 15px;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -134,8 +332,8 @@ img{
 
 
 
-
 /*TITLES*/
+
 
 h2{
     /* border: 1px solid; */
@@ -174,4 +372,75 @@ h3{
 }
 
 
+/*ASIDE*/
 
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
+
+.spam-university{
+    border-radius: 10px;
+    width: 80%;
+    /* background-color: linear-gradient(15deg, #13547a 0%, #80d0c7 100%,0); */
+    background: linear-gradient(rgba(234, 234, 234, 0.7),rgba(234, 171, 172, 0.70))
+    ,url(../assets/img/finance/universidad.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh;
+    align-items: center;
+}
+
+.list-university{
+
+    background: none;
+
+}
+
+.list-university p{
+    font-weight: bold;
+    font-size: medium;
+    background: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+
+
+}
+
+.spam-university h3{
+    background: none;
+    text-align: center;
+    margin: 0;
+
+}
+.button-study {
+    background-color: rgba(252, 92, 94, 0.7);
+    width: 50%;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    /* font-family: 'Roboto',sans-serif; */
+    cursor: pointer;
+
+
+
+
+}
+
+
+.spam-market img{
+    height: 500px;
+
+}

@@ -426,7 +426,7 @@ aside{
 }
 .button-study {
     background-color: rgba(252, 92, 94, 0.7);
-    width: 50%;
+
     font-weight: bold;
     font-size: 14px;
     padding: 10px;
@@ -439,6 +439,13 @@ aside{
 
 
 }
+
+.button-study:hover{
+    background-color: aqua;
+    transition: 2s;
+}
+
+
 
 
 .spam-market img{

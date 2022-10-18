@@ -6,29 +6,21 @@ body{
 						 "main aside"
 						 "footer footer";
 	justify-content: center;
-	gap:1rem;
+	gap: 1rem;
 }
 header{
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: auto 1fr auto;
-	grid-template-areas: "date"
-						 "title"
-						 "navbar";
+	grid-template-rows: 65.2px 16px;
+	grid-template-areas: "tittle-navbar"
+						 "date";
 	grid-area: header;
-	grid-row-gap: 1rem;
+	row-gap: 8px;
 }
-header>p{
-	grid-area: date;
-}
-header h1{
-	grid-area: title;
-	align-self: center;
-}
-header nav{
+.tittle-navbar{
 	display: grid;
-	grid-template-columns: repeat(4, auto);
-	grid-area: navbar;
+	grid-template-columns: 1fr 8fr 1fr;
+	gap: 1rem;
 }
 main{
 	grid-area: main;

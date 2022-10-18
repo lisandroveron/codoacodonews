@@ -1,12 +1,12 @@
 body{
 	display: grid;
-	grid-template-columns: 4fr 1fr;
+	grid-template-columns: auto 300px;
 	grid-template-rows: 30% 1fr auto;
 	grid-template-areas: "header header"
 						 "main aside"
 						 "footer footer";
 	justify-content: center;
-	grid-row-gap: 1rem;
+	gap:1rem;
 }
 header{
 	display: grid;

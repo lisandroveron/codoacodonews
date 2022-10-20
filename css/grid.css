@@ -1,7 +1,7 @@
 body{
 	display: grid;
-	grid-template-columns: auto 300px;
-	grid-template-rows: 30% 1fr auto;
+	grid-template-columns: 4fr 1fr;
+	grid-template-rows: 90px 1fr auto;
 	grid-template-areas: "header header"
 						 "main aside"
 						 "footer footer";
@@ -25,11 +25,11 @@ header{
 main{
 	grid-area: main;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: max-content;
 	grid-column-gap: 1rem;
 	grid-row-gap: 2rem;
-	grid-template-areas: "popular popular";
+	grid-template-areas: "popular popular popular";
 }
 .shortnews{
 	display: grid;

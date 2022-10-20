@@ -24,7 +24,7 @@ main h2{
 .line{
     box-sizing: border-box;
     width: 80%;
-    border-top: 5px solid #cc1e44;
+    border-top: 2px solid #cc1e44;
 }
 .principal-new-container{
     grid-column: 1/-1;

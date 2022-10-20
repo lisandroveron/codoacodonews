@@ -35,6 +35,7 @@ header{
 	width: 95%;
 	max-width: 1400px; ;
 	background-color: #fff;
+	z-index: 1000;
 }
 .tittle-navbar{
 	align-items: center;

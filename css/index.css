@@ -20,6 +20,7 @@ nav{
 	display: flex;
 	flex-direction: row;
 	font-size: 1.25rem;
+	overflow: hidden;
 }
 a{
 	color: inherit;
@@ -28,6 +29,10 @@ a{
 body, header, footer{
 	width: 98%;
 	max-width: 1400px;
+}
+#check-menu, #menu, #close-menu{
+	z-index: 9999;
+	display: none;
 }
 /* - - - - END - G E N E R A L - END - - - - */
 /* - - - - - H E A D E R - - - - - */
@@ -38,6 +43,7 @@ header{
 	z-index: 1000;
 }
 .tittle-navbar{
+	grid-area: tittle-navbar;
 	align-items: center;
 	margin-top: 0.5rem;
 	border-bottom: 1px solid var(--lightgrey);

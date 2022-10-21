@@ -1,8 +1,7 @@
 @media screen and (max-width: 1300px) {
 	main{
-		grid-template-areas: "popular popular";
+		grid-template-areas: "popular popular popular";
 		grid-template-columns: auto;
-		grid-template-rows: repeat(auto-fill, auto);
 	}
 
 }
@@ -12,8 +11,18 @@
 							 "main main"
 							 "footer footer";
 	}
+	main{
+		grid-template-areas: "popular popular";
+		gap: 1rem;
+	}
 	aside{
 		display: none;
+	}
+	.principal-new h3{
+		font-size: 1.4rem;
+	}
+	.news img{
+		height: 250px;
 	}
 }
 @media screen and (max-width: 600px){
@@ -26,8 +35,6 @@
 	}
 	main{
 		grid-template-areas: "popular";
-		grid-template-columns: auto;
-		grid-template-rows: repeat(auto-fill, auto);
 		gap: 1.5rem 0;
 	}
 	/* - - - - END - G R I D - END - - - - */

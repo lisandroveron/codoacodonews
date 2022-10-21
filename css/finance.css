@@ -164,31 +164,30 @@
 
 
 
-nav{
+.nav-header{
     /* background-color: rgba(238, 240, 246, 0.982); */
     border-top: 1px rgb(225, 214, 214) solid;
     border-bottom: 1px rgb(225, 214, 214) solid;
     margin: 20px;
 }
-nav ul{
+.nav-header .nav-ul-header{
     margin: 0;
     padding:0;
 }
-nav ul li {
+.nav-header .nav-ul-header .nav-ul-li-header {
     display: inline-block;
 
 }
-nav ul li a {
+.nav-header .nav-ul-header .nav-ul-li-header a {
     color:rgb(0, 0, 0);
     text-decoration: none;
     padding: 9px 100.5px;
     display: block;
-    margin-left: 0;
     transition: all 0.5s ease;
     font-size: medium;
 
 }
-nav ul li a:hover {
+.nav-header .nav-ul-header .nav-ul-li-header a:hover {
     /* background-color: rgb(218, 213, 231); */
     color: var(--magenta);
     border-right: 3px solid var(--magenta);
@@ -451,4 +450,86 @@ aside{
 .spam-market img{
     height: 500px;
 
+}
+
+
+/*FOOTER*/
+
+
+/*---Logo---*/
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 200px;
+}
+
+
+.footer-son-title {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.footer-son-title1{
+    border: 1px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+
+.footer-title{
+    font-size: 100px;
+    position: absolute;
+
+
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    left: 35%; */
+
+}
+
+
+.footer-title1{
+    position: relative;
+    height: 4%;
+    top: 3%;
+    letter-spacing: 6px;
+    width: 100%;
+}
+
+.footer-title1 p{
+
+    /* left: 40%; */
+    /* left: 35%;
+    position: relative;
+    letter-spacing: 6px;
+    display: inline-block; */
+    font-size: 10px;
+
+}
+
+
+.footer-title2{
+    font-size: 12px;
+    position: absolute;
+    background: none;
+    top:68%;
+    width: 150%;
+}
+
+
+/*---Secciones---*/
+
+.footer-secction-nav{
+    border-top: none;
+    border-bottom: none;
 }

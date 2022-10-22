@@ -1,7 +1,7 @@
 body{
 	display: grid;
 	grid-template-columns: 4fr 1fr;
-	grid-template-rows: 90px 1fr auto;
+	grid-template-rows: 6rem 1fr auto;
 	grid-template-areas: "header header"
 						 "main aside"
 						 "footer footer";

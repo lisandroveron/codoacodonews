@@ -14,7 +14,7 @@
 /* - - - - - G E N E R A L - - - - - */
 body{
 	margin: auto;
-	font-family: Roboto, Courier, monospace;
+	font-family: Roboto, monospace;
 }
 nav{
 	display: flex;
@@ -57,6 +57,9 @@ nav a{
 .date{
 	height: 100%;
 	text-align: end;
+}
+header nav a:hover,#registry:hover{
+	color: var(--magenta);
 }
 /* - - - - END - H E A D E R - END - - - - */
 

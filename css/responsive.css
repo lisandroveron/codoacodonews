@@ -1,18 +1,85 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media screen and (max-width: 1200px){
 =======
+=======
+@media screen and (max-width: 1300px) {
+	main{
+		grid-template-areas: "popular popular popular";
+		grid-template-columns: auto;
+	}
+
+}
+>>>>>>> 94c0c54deb2927e0ffce3d6fe26f1767512c2102
 @media screen and (max-width: 960px){
 	body{
 		grid-template-areas: "header header"
 							 "main main"
 							 "footer footer";
 	}
+	header .tittle{
+		grid-column: 2/3;
+		display: flex;
+		justify-content: center;
+	}
+	main{
+		grid-template-areas: "popular popular";
+		gap: 1rem;
+	}
 	aside{
 		display: none;
 	}
+	footer{
+		grid-template-columns: repeat(2,1fr);
+		grid-template-areas: "sections media"
+								"law law";
+	}
+	.principal-new h3{
+		font-size: 1.4rem;
+	}
+	.news img{
+		height: 250px;
+	}
+	/* menu start */
+	#menu{
+		display: block;
+		font-size: 3rem;
+		position: absolute;
+	}
+	#check-menu:not(:checked) ~ nav{
+		display: none;
+	}
+	#check-menu:checked ~ label #close-menu{
+		display: block;
+	}
+	#check-menu:checked ~ label #open-menu{
+		display: none;
+	}
+	header nav{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 0;
+		width: 30vw;
+		height: 100vh;
+		background-color: rgb(255, 255, 255);
+		text-align: center;
+		font-size: 2rem ;
+	}
+	header nav a{
+		margin:1rem 0 ;
+	}
+	/* menu end */
+
+	.footer-son-title{
+		display: none;
+	}
+
+
 }
 @media screen and (max-width: 600px){
 	/* - - - - - G R I D - - - - - */
+<<<<<<< HEAD
 >>>>>>> 6569cd5cb03b8b28ca4a87d6e57e91f53f285b2d
 	.mainnews{
 		grid-template-columns: repeat(2, 1fr);	
@@ -28,6 +95,18 @@
 		grid-column: 1/2;
 =======
 	/* - - - - END - G R I D - END - - - - */
+=======
+	body{
+		grid-template-areas: "header"
+							 "main"
+							 "footer";
+		grid-template-columns: auto;
+	}
+	main{
+		grid-template-areas: "popular";
+		gap: 1.5rem 0;
+	}
+>>>>>>> 94c0c54deb2927e0ffce3d6fe26f1767512c2102
 	h1, header h2{
 		font-size: 3rem;
 >>>>>>> 6569cd5cb03b8b28ca4a87d6e57e91f53f285b2d
@@ -39,6 +118,7 @@
 		font-size: 9px;
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	.mainnews{
 		grid-template-columns: 1fr;	
 	}
@@ -48,8 +128,30 @@
 @media screen and (max-width: 400px){
 	.infotable tr:nth-child(1) th:nth-child(n+2){
 		display: none;
+=======
+	.principal-new div.line{
+		border-top: 2px solid #cc1e44;
+>>>>>>> 94c0c54deb2927e0ffce3d6fe26f1767512c2102
 	}
-	.infotable tr td:nth-child(n+2){
-		display: none;
+	.principal-new{
+		position:static;
+	}
+	.principal-new img{
+		width: 100%;
+		height: 250px;
+		object-fit: cover;
+	}
+	.principal-new h3{
+		font-size: 1.5rem;
+		bottom:0rem;
+		left: 0rem;
+		right: 0rem;
+		padding: 0 0;
+		position: static;
+		background: #fff;
+		color: #000
+	}
+	header nav{
+		width: 100vw;
 	}
 }

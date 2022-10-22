@@ -1,64 +1,105 @@
 /* - - - - - F O N T S - A N D - V A R S - - - - - */
 :root{
-	--blue: rgb(14, 50, 142);
-	--lightblue: rgb(141, 172, 252);
+	--sky: rgb(141, 172, 252);
+}
+@font-face{
+	font-family: clock;
+	src: url("../assets/fonts/clock.ttf");
 }
 /* - - - - END - F O N T S - A N D - V A R S - END - - - - - */
 
 /* - - - - - H E A D E R - - - - - */
-header{
-	background-color: var(--lightblue);
-	z-index: 100;
-}
-header h2{
-	color: var(--magenta);
-	font-family: news;
-	font-size: 5rem;
-	position: relative;
-	text-align: center;
-}
-header nav{
-	z-index: 10;
-}
-.skyicon{
-	height: 50px;
-	left: 80%;
-	position: absolute;
-	top: 10%;
-	width: 50px;
-}
-.waves{
-	background-color: transparent;
-	height: 100%;
-	position: absolute;
-	width: 100%;
-}
-.waves path{
-	fill: rgba(240, 240, 240, 0.5);
-}
+
 /* - - - - END - H E A D E R - END - - - - */
 
 /* - - - - - M A I N - - - - - */
-table{
+main{
+	display: initial;
+}
+main table{
 	margin: auto;
 	text-align: center;
+	width: 100%;
+	height: 100%;
+	table-layout: fixed;
 }
-td img{
+main td img{
 	height: 50px;
 	width: 50px;
+}
+main table, main table tr{
+	border-collapse: collapse;
+}
+main table th, main table td{
+	background-color: #f3e4b7;
+}
+/* The next block is the hour column */
+main table tr td:first-child{
+	font-family: clock;
+	font-size: 1.5em;
+	letter-spacing: 4px;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+}
+/* The next two blocks are border-radius for the weather table */
+main table tr:first-child th:first-child{
+	border-top-left-radius: 25px;
+	width: 2rem;
+	border-right: none;
+}
+main table tr:last-child td:first-child{
+	border-top-right-radius: 25px;
 }
 .infocell{
 	display: grid;
 	grid-gap: 5px;
-	grid-template-columns: 1em minmax(min-content, max-content);
-	grid-template-rows: auto repeat(3, 1em);
+	grid-template-columns: 1rem minmax(min-content, max-content);
+	grid-template-rows: auto repeat(3, 1rem);
+	justify-content: center;
 	justify-items: left;
+	margin-top: 10px;
 }
 .infocell img{
 	height: auto;
 	width: auto;
 }
 /* - - - - END - M A I N - END - - - - */
+
+/* - - - - - A S I D E - - - - - */
+aside{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	background-color: #110e3c;
+	color: white;
+	grid-template-areas: "day"
+						 "icon"
+						 "temp";
+	grid-gap: 20px 20px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	justify-items: center;
+}
+aside h2{
+	align-self: center;
+	grid-area: day;
+}
+aside img{
+	grid-area: icon;
+	height: 100px;
+	align-self: center;
+}
+aside #temp{
+	grid-area: temp;
+	font-size: 5em;
+	line-height: 1ex;
+	align-self: center;
+}
+aside p>span{
+	vertical-align: text-top;
+	font-size: 1rem;
+}
+/* - - - - E N D - A S I D E - E N D - - - - */
 
 /* - - - - - F O O T E R - - - - - */
 footer{
@@ -79,3 +120,18 @@ footer{
 	}
 }
 /* - - - - E N D - A N I M A T I O N S - E N D - - - - */
+
+/* - - - - - R E S P O N S I V E - - - - - */
+@media screen and (max-width: 600px){
+	main table tr:first-child th:nth-child(n+5),
+	main table tr td:nth-child(n+5){
+		display: none;
+	}
+}
+@media screen and (max-width: 400px){
+	main table tr:first-child th:nth-child(n+3),
+	main table tr td:nth-child(n+3){
+		display: none;
+	}
+}
+/* - - - - E N D - R E S P O N S I V E - E N D - - - - */

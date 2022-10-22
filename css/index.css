@@ -2,6 +2,7 @@
 :root{
 	--grey: #565656;
 	--magenta: #cc1e44;
+<<<<<<< HEAD
 }
 
 @font-face{
@@ -14,17 +15,25 @@
 @font-face{
 	font-family: news1;
 	src: url("../assets/fonts/ChakraPetch-Bold.ttf");
+=======
+	--lightgrey:rgb(188, 188, 188);
+>>>>>>> 94c0c54deb2927e0ffce3d6fe26f1767512c2102
 }
 @font-face {
-	font-family: AlfaSalb;
-	src: url("../assets/fonts/AlfaSlabOne-Regular.ttf");
+    font-family: Roboto;
+    src: url("../assets/fonts/Roboto-Light.ttf");
 }
+<<<<<<< HEAD
 >>>>>>> 6569cd5cb03b8b28ca4a87d6e57e91f53f285b2d
+=======
+
+>>>>>>> 94c0c54deb2927e0ffce3d6fe26f1767512c2102
 /* - - - - END - F O N T S - A N D - V A R S - END - - - - - */
 
 /* - - - - - G E N E R A L - - - - - */
 body{
 	margin: auto;
+<<<<<<< HEAD
 <<<<<<< HEAD
 	max-width: 80vw;
 =======
@@ -38,23 +47,44 @@ main{
 nav{
 	text-align: center;
 >>>>>>> 6569cd5cb03b8b28ca4a87d6e57e91f53f285b2d
+=======
+	font-family: Roboto, monospace;
+}
+header nav{
+	display: flex;
+	flex-direction: row;
+	font-size: 1.25rem;
+	overflow: hidden;
+>>>>>>> 94c0c54deb2927e0ffce3d6fe26f1767512c2102
 }
 
 a{
 	color: inherit;
 	text-decoration: none;
 }
+<<<<<<< HEAD
 
+=======
+body, header, footer{
+	width: 98%;
+	max-width: 1400px;
+}
+#check-menu, #menu, #close-menu{
+	z-index: 9999;
+	display: none;
+}
+>>>>>>> 94c0c54deb2927e0ffce3d6fe26f1767512c2102
 /* - - - - END - G E N E R A L - END - - - - */
-
 /* - - - - - H E A D E R - - - - - */
 header{
 	color: black;
-	position: relative;
-	gap: 1rem;
+	position: fixed;
+	background-color: #fff;
+	z-index: 9999;
 }
-h1{
+header nav a:hover,#registry:hover{
 	color: var(--magenta);
+<<<<<<< HEAD
 <<<<<<< HEAD
 	font-family: news;
 	font-size: 4em;
@@ -107,26 +137,66 @@ main{
 	margin: auto;
 	font-family: AlfaSalb;
 	font-size: 3	em;
+=======
+}
+.tittle-navbar{
+	grid-area: tittle-navbar;
+	align-items: center;
+	margin-top: 0.5rem;
+	border-bottom: 1px solid var(--lightgrey);
+}
+.tittle{
+	font-size: 3rem;
+	height: 3rem;
+}
+nav a{
+	margin: 0 0.5rem;
+}
+.date{
+	display: grid;
+	grid-template-columns: 80% 20%;
+	grid-template-rows: 1fr;
+}
+.quotes{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr;
+}
+.pricing{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 20px;
+    border-right: 1px solid;
+}
+.button-study {
+    background-color: rgba(252, 92, 94, 0.7);
+>>>>>>> 94c0c54deb2927e0ffce3d6fe26f1767512c2102
 	text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    /* font-family: 'Roboto',sans-serif; */
+    cursor: pointer;
 }
-
-header nav a{
-	border-right: 3px solid var(--magenta);
-	font-size: 1.25rem;
+.button-study:hover {
+    background-color: aqua;
+    transition: 2s;
 }
-
-header nav a:last-child{
-	border-right: none;
-}
-
 /* - - - - END - H E A D E R - END - - - - */
 
 /* - - - - - M A I N - - - - - */
+<<<<<<< HEAD
 .shortnews{
 	font-size: 1rem;
 >>>>>>> 6569cd5cb03b8b28ca4a87d6e57e91f53f285b2d
 }
 .shortnews p, .principal-new p{
+=======
+.shortnews p{
+>>>>>>> 94c0c54deb2927e0ffce3d6fe26f1767512c2102
 	border-top: 2px solid var(--magenta);
 	color: var(--magenta);
 	display: inline-block;
@@ -137,9 +207,15 @@ header nav a:last-child{
 .shortnews h3, .principal-new h3{
 =======
 .shortnews h2{
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	display: -webkit-box;
 	font-size: 2rem;
+	overflow: hidden;
 }
-
+.shortnews div{
+	overflow: hidden;
+}
 .shortnews h3{
 >>>>>>> 6569cd5cb03b8b28ca4a87d6e57e91f53f285b2d
 	-moz-box-orient: vertical;
@@ -153,10 +229,15 @@ header nav a:last-child{
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+<<<<<<< HEAD
 .shortnews img, .principal-new img{
+=======
+.shortnews img{
+>>>>>>> 94c0c54deb2927e0ffce3d6fe26f1767512c2102
 	width: 100%;
 	margin: 0.8rem 0;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 .aside-content{
 	grid-area: 1 / 2 / span 2 / span 1;
@@ -181,20 +262,175 @@ header nav a:last-child{
 .popularnews img{
 	height: auto;
 }
+=======
+>>>>>>> 94c0c54deb2927e0ffce3d6fe26f1767512c2102
 /* - - - - END - M A I N - END - - - - */
 
 /* - - - - - A S I D E - - - - - */
-aside{
-    display: grid;
-    margin-top:2rem;
-}
 
 /* - - - - END - A S I D E - END - - - - */
 
 /* - - - - - F O O T E R - - - - - */
-footer p{
-	font-size: 1.5rem;
-	text-align: center;
+.footer-container{
+    height:85px;
+    border-top: 1px solid var(--magenta);
+}
+/*---Logo---*/
+
+.footer-son-title {
+    grid-area: logo;
+    display: flex;
+    justify-content: left;
+
+
+
+}
+
+
+.footer-son-title1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;  /*lo tiramos para arriba a cac*/
+    width: 100%;
+}
+
+
+
+.footer-title{
+    font-size: 60px;
+    position: absolute;
+
+
+
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    left: 35%; */
+
+}
+
+
+.footer-title1 {
+    position: relative;
+    height: 4%;
+    top: 3%;
+    letter-spacing: 6px;
+
+}
+
+.footer-title1 p {
+
+    /* left: 40%; */
+    /* left: 35%;
+    position: relative;
+    letter-spacing: 6px;
+    display: inline-block; */
+    font-size: 6px;
+    padding-bottom: 0.8px;
+    padding-left: 16px;
+
+}
+
+
+.footer-title2{
+    font-size: 9px;
+    position: absolute;
+    background: none;
+    top:75%;
+    
+}
+
+
+/*---Secciones---*/
+.footer-son1{
+	grid-area: sections;
+}
+.footer-son .footer-son-h4{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-family: 'calibri';
+    font-weight: lighter;
+
+}
+
+.footer-ul{
+    padding: 0;
+    display: flex;
+
+}
+
+.footer-li{
+    list-style: none;
+
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.footer-li a{
+
+    font-size: medium;
+    display: flex;
+    justify-content: left;
+    font-family: 'calibri';
+    font-weight: lighter;
+
+}
+
+.footer-li a:hover{
+    color: aqua;
+    font-size: 20px;
+    transition: 0.5s  ease;
+}
+
+
+
+/*-----MEDIA SOCIAL-------*/
+.footer-son2{
+	grid-area: media;
+}
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.footer-son-h4-1{
+    margin: 0;
+    text-align: center;
+    font-family: 'calibri';
+    font-weight: lighter;
+}
+
+
+
+.footer-icons img{
+    height: 35px;
+    padding: 10px 20px 0px 20px;
+    margin-top: 0px;
+
+}
+
+.footer-icons img:hover{
+    height: 40px;
+    transition: 0.5s ease;
+
+}
+
+
+/*----Law-----*/
+
+.law{
+    grid-area: law;
+    display: flex;
+    justify-content: center; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 33px;
+    /* border-top: 6px solid var(--magenta); */
 }
 /* - - - - END - F O O T E R - END - - - - */
 >>>>>>> 6569cd5cb03b8b28ca4a87d6e57e91f53f285b2d

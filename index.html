@@ -2,89 +2,109 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="assets/icons/logo.svg">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/grid.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="assets/icons/logo.svg">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<title>Diario Codo a Codo</title>
 </head>
 <body>
 	<header>
-		<p>Sabado, 3 de Septiembre de 2022</p>
-		<h1>Diario <br> Codo a Codo</h1>
-		<nav>
-			<a href="index.html" id="home">Inicio</a>
-			<a href="pages/weather.html" id="weather">Clima</a>
-			<a href="pages/sports.html" id="sports">Deportes</a>
-			<a href="">Finanzas</a>
-		</nav>
+		<div class="tittle-navbar">
+			<div class="tittle">
+                <p>DiarioUno</p>
+            </div>
+            <input type="checkbox" id="check-menu">
+            <label id="menu" for="check-menu">
+                <span id="open-menu">&#9776;</span>
+                <span id="close-menu">X</span>
+            </label>
+			<nav>
+				<a href="#">Inicio</a>
+				<a href="./pages/weather.html">Clima</a>
+				<a href="./pages/sports.html">Deportes</a>
+				<a href="./pages/finance.html">Finanzas</a>
+			</nav>
+			<a href="./pages/form.html" class="button-study">Registrate</a>
+		</div>
+		<div class="date">
+			<p>21 de marzo 2022</p>
+		</div>
 	</header>
 	<main>
-		<div class="principal-new">
-			<div >
-				<p>Guardia alta</p>
+		<article class="shortnews">
+			<p>Guardia alta</p>
+			<a href="">
 				<h2>Preocupación en River por los arbitrajes, de cara al Superclásico: “Estamos calientes”</h2>
-				<img src="assets/img/gallardo-preocupacion_en_river.jpg" alt="Marcelo Gallardo preocupado en la cancha">
-				<h3>Según pudo saber Clarín, en los pasillos del Monumental ven “un favoritismo hacia Boca” en los referatos. El partido con el Xeneize será el 11 de septiembre, pero ya empezó a jugarse.</h3>
-			</div>
-		</div>
-		<div class="aside-content">
-			<div class="aside-content_large">
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil aliquid sit corporis natus consequuntur cupiditate, praesentium nesciunt quae at eveniet aperiam, minus, nulla eaque voluptatibus iste a repellat ex minima!</p>
-			</div>
-			<div>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil aliquid sit corporis natus consequuntur cupiditate, praesentium nesciunt quae at eveniet aperiam, minus, nulla eaque voluptatibus iste a repellat ex minima!</p>
-			</div>
-			<div>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis corporis numquam recusandae aliquid est officiis facere aspernatur tempora maiores voluptate excepturi, ducimus atque quidem minus pariatur quos. Labore, itaque culpa?</p>	
-			</div>
-			<div>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil aliquid sit corporis natus consequuntur cupiditate, praesentium nesciunt quae at eveniet aperiam, minus, nulla eaque voluptatibus iste a repellat ex minima!</p>
-			</div>
-			<div>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis corporis numquam recusandae aliquid est officiis facere aspernatur tempora maiores voluptate excepturi, ducimus atque quidem minus pariatur quos. Labore, itaque culpa?</p>	
-			</div>
-		</div>
-		<div class="mainnews">
-			<div class="shortnews">
-				<p>De 3 a 9 años de cárcel</p>
+				<div>
+					<img src="assets/img/gallardo-preocupacion_en_river.jpg" alt="Marcelo Gallardo preocupado en la cancha">
+				</div>
+			</a>
+			<h3>Según pudo saber Clarín, en los pasillos del Monumental ven “un favoritismo hacia Boca” en los referatos. El partido con el Xeneize será el 11 de septiembre, pero ya empezó a jugarse.</h3>
+		</article>
+		<article class="shortnews">
+			<p>De 3 a 9 años de cárcel</p>
+			<a href="">
 				<h2>AFIP denunció a Susana Giménez por presunta evasión de impuestos y podría pagar hasta 300 millones de pesos</h2>
-				<img src="assets/img/susana-gimene-afip_denuncio_a_susana.jpg" alt="Susana Giménez en su casa">
-				<h3>Es por una deuda de 2019 relacionada con Bienes Personales. Para la diva, el impuesto es 'confiscatorio'.</h3>
-			</div>
-			<div class="shortnews">
-				<p>Emprendedor</p>
+				<div>
+					<img src="assets/img/susana-gimene-afip_denuncio_a_susana.jpg" alt="Susana Giménez en su casa">
+				</div>
+			</a>
+			<h3>Es por una deuda de 2019 relacionada con Bienes Personales. Para la diva, el impuesto es 'confiscatorio'.</h3>
+		</article>
+		<article class="shortnews">
+			<p>Emprendedor</p>
+			<a href="">
 				<h2>Llegó a Buenos Aires con 300 pesos y armó una cadena de hamburguesas gourmet: cómo hizo</h2>
-				<img src="assets/img/julio-gauna-llego_a_buenos_aires_con_300_pesos.jpg" alt="Emprendedor Julio Gauna contento en su hamburguesería">
-				<h3>Es Julio Gauna, un santafesino que vivió en Mar del Plata y llegó a Buenos Aires a los 22 años. El el dueño de El Desembarco, que también está por abrir en Montevideo.</h3>
-			</div>
-			<div class="shortnews">
-				<p>Tiene un año</p>
+				<div>
+					<img src="assets/img/julio-gauna-llego_a_buenos_aires_con_300_pesos.jpg" alt="Emprendedor Julio Gauna contento en su hamburguesería">
+				</div></a>
+
+			<h3>Es Julio Gauna, un santafesino que vivió en Mar del Plata y llegó a Buenos Aires a los 22 años. El el dueño de El Desembarco, que también está por abrir en Montevideo.</h3>
+		</article>
+		<article class="shortnews">
+			<p>Tiene un año</p>
+			<a href="">
 				<h2>Tucumán: internaron a un bebé por intoxicación con cocaína y detienen a sus padres</h2>
-				<img src="assets/img/tucuman-internaron_a_un_bebe_por_intoxicacion.jpg" alt="Hospital del Niño Jesus en Tucumán">
-				<h3>La justicia investiga cómo accedió el chico a la droga. Permanece en grave estado.</h3>
-			</div>
-			<div class="shortnews">
-				<p>Guerra Rusia-Ucrania</p>
-				<h2>Irán le entregó decenas de drones kamikazes al ejército de Putin para reforzar sus ataques</h2>
-				<img src="assets/img/guerra-ucrania-rusia_iran-le-entrego-drones-a-rusia.jpg" alt="Misiles kamikaze de Rusia">
-				<h3>Todo lo que tenes que saber de la guerra en Ucrania, minuto a minuto.</h3>
-			</div>
-			<div class="shortnews">
-				<p>Pasión de multitudes</p>
+				<div>
+					<img src="assets/img/tucuman-internaron_a_un_bebe_por_intoxicacion.jpg" alt="Hospital del Niño Jesus en Tucumán">
+				</div>
+			</a>
+			<h3>La justicia investiga cómo accedió el chico a la droga. Permanece en grave estado.</h3>
+		</article>
+		<article class="shortnews">
+			<p>Guerra Rusia-Ucrania</p>
+			<a href="">
+				<h2>Irán le entregó decenas de drones kamikazes al ejército de Putin para reforzar sus ataques.</h2>
+				<div>
+					<img src="assets/img/guerra-ucrania-rusia_iran-le-entrego-drones-a-rusia.jpg" alt="Misiles kamikaze de Rusia">
+				</div>
+			</a>
+			<h3>Todo lo que tenes que saber de la guerra en Ucrania, minuto a minuto.</h3>
+		</article>
+		<article class="shortnews">
+			<p>Pasión de multitudes</p>
+			<a href="">
 				<h2>Tinder de figuritas: el revolucionario método del argentino que llenó el álbum del Mundial en tan sólo 8 días</h2>
-				<img src="assets/img/pasion-de-multitudes_tinder-de-figuritas.jpg" alt="Albúm de figuritas del mundial">
-				<h3>Se llama Francisco Dipietro, es estudiante universitario y desarrolló un sistema colaborativo y muy eficiente para intercambiar los cromos de Qatar 2022.</h3>
-			</div>
-			<div class="shortnews">
-				<p>Tres por uno</p>
+				<div>
+					<img src="assets/img/pasion-de-multitudes_tinder-de-figuritas.jpg" alt="Albúm de figuritas del mundial">
+				</div>
+			</a>
+			<h3>Se llama Francisco Dipietro, es estudiante universitario y desarrolló un sistema colaborativo y muy eficiente para intercambiar los cromos de Qatar 2022.</h3>
+		</article>
+		<article class="shortnews">
+			<p>Tres por uno</p>
+			<a href="">
 				<h2>Así es la fórmula de la polipíldora que baja un tercio la mortalidad tras un infarto </h2>
-				<img src="assets/img/tres-por-uno_asi-es-la-formula-de-la-polipildora.jpg" alt="Píldora">
-				<h3>Contiene aspirina y fármacos que ayudan a controlar la presión y el colesterol en un solo comprimido.</h3>
-			</div>
-		</div>
+				<div>
+					<img src="assets/img/tres-por-uno_asi-es-la-formula-de-la-polipildora.jpg" alt="Píldora">
+				</div>
+			</a>
+
+			<h3>Contiene aspirina y fármacos que ayudan a controlar la presión y el colesterol en un solo comprimido.</h3>
+		</article>
 	</main>
 	<aside>
 		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores omnis corrupti soluta, repudiandae cumque consectetur ducimus doloribus mollitia sequi laudantium. Velit, natus molestias. Illum quo dolore, assumenda placeat doloribus nisi!
@@ -92,8 +112,45 @@
 		Laudantium corrupti officia aperiam, voluptatem aut odit illo modi sunt iste quo, quas velit nostrum porro ipsa ducimus, sapiente esse error voluptate alias? Molestias facilis dicta illo soluta itaque optio.
 		Quisquam nostrum eveniet vitae quae, ducimus rerum perspiciatis at. Ut vitae minima quos, voluptate ipsum quam cupiditate recusandae tenetur earum aliquam quo, quas harum tempore laborum fugit sint doloremque ad!
 	</aside>
-	<footer>
-		<p>Diario Codo a Codo. © Todos los derechos reservados. 2022</p>
-	</footer>
+	<footer class="footer-container">
+        <div class="footer-son-title">
+            <div class="footer-son-title1">
+                <p class="footer-title">CAC</p>
+                <div class="footer-title1">
+                    <p>CODO A CODO</p>
+                </div>
+                <p class="footer-title2">EL DIARIO DE LA GENTE</p>
+            </div>
+
+        </div>
+        <div class="footer-son">
+            <h4 class="footer-son-h4">Secciones</h4>
+            <div class="footer-secction">
+                <nav class="footer-nav">
+                    <ul class="footer-ul">
+                        <li class="footer-li"><a href="../index.html">Inicio</a></li>
+                        <li class="footer-li"><a href="../pages/weather.html">Clima</a></li>
+                        <li class="footer-li"><a href="../pages/sports.html">Deportes</a></li>
+                        <li class="footer-li"><a href="../pages/finance.html">Finanzas</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+
+        </div>
+        <div class="footer-son">
+            <h4 class="footer-son-h4-1">Seguinos en nuestras redes</h4>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/" target="_blank"><img src="./assets/icons/Footer/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"target="_blank"><img src="./assets/icons/Footer/Instagram.png" alt="instagram"></a>
+                <a href="https://twitter.com/"target="_blank"><img src="./assets/icons/Footer/Twiter.png" alt="twiter"></a>
+            </div>
+
+        </div>
+        <div class="law">
+            <small>© 2022 <b>Codo a Codo</b> - Todos los derechos Reservados.</small>
+        </div>
+    </footer>
 </body>
 </html>

@@ -16,7 +16,7 @@ body{
 	margin: auto;
 	font-family: Roboto, monospace;
 }
-nav{
+header nav{
 	display: flex;
 	flex-direction: row;
 	font-size: 1.25rem;
@@ -42,24 +42,53 @@ header{
 	background-color: #fff;
 	z-index: 1000;
 }
+header nav a:hover,#registry:hover{
+	color: var(--magenta);
+}
 .tittle-navbar{
 	grid-area: tittle-navbar;
 	align-items: center;
 	margin-top: 0.5rem;
 	border-bottom: 1px solid var(--lightgrey);
 }
-.tittle-navbar p{
+.tittle{
 	font-size: 3rem;
+	height: 3rem;
 }
 nav a{
 	margin: 0 0.5rem;
 }
 .date{
-	height: 100%;
-	text-align: end;
+	display: grid;
+	grid-template-columns: 80% 20%;
+	grid-template-rows: 1fr;
 }
-header nav a:hover,#registry:hover{
-	color: var(--magenta);
+.quotes{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr;
+}
+.pricing{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 20px;
+    border-right: 1px solid;
+}
+.button-study {
+    background-color: rgba(252, 92, 94, 0.7);
+	text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    /* font-family: 'Roboto',sans-serif; */
+    cursor: pointer;
+}
+.button-study:hover {
+    background-color: aqua;
+    transition: 2s;
 }
 /* - - - - END - H E A D E R - END - - - - */
 

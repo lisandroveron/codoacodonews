@@ -48,4 +48,8 @@ aside{
 }
 footer{
 	grid-area: footer;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-areas: "logo sections media"
+						  "law law law";
 }

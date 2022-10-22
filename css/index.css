@@ -40,7 +40,7 @@ header{
 	color: black;
 	position: fixed;
 	background-color: #fff;
-	z-index: 1000;
+	z-index: 9999;
 }
 header nav a:hover,#registry:hover{
 	color: var(--magenta);
@@ -132,8 +132,168 @@ nav a{
 /* - - - - END - A S I D E - END - - - - */
 
 /* - - - - - F O O T E R - - - - - */
-footer p{
-	font-size: 1.5rem;
-	text-align: center;
+.footer-container{
+    height:85px;
+    border-top: 1px solid var(--magenta);
+}
+/*---Logo---*/
+
+.footer-son-title {
+    grid-area: logo;
+    display: flex;
+    justify-content: left;
+
+
+
+}
+
+
+.footer-son-title1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;  /*lo tiramos para arriba a cac*/
+    width: 100%;
+}
+
+
+
+.footer-title{
+    font-size: 60px;
+    position: absolute;
+
+
+
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    left: 35%; */
+
+}
+
+
+.footer-title1 {
+    position: relative;
+    height: 4%;
+    top: 3%;
+    letter-spacing: 6px;
+
+}
+
+.footer-title1 p {
+
+    /* left: 40%; */
+    /* left: 35%;
+    position: relative;
+    letter-spacing: 6px;
+    display: inline-block; */
+    font-size: 6px;
+    padding-bottom: 0.8px;
+    padding-left: 16px;
+
+}
+
+
+.footer-title2{
+    font-size: 9px;
+    position: absolute;
+    background: none;
+    top:75%;
+    
+}
+
+
+/*---Secciones---*/
+.footer-son1{
+	grid-area: sections;
+}
+.footer-son .footer-son-h4{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-family: 'calibri';
+    font-weight: lighter;
+
+}
+
+.footer-ul{
+    padding: 0;
+    display: flex;
+
+}
+
+.footer-li{
+    list-style: none;
+
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.footer-li a{
+
+    font-size: medium;
+    display: flex;
+    justify-content: left;
+    font-family: 'calibri';
+    font-weight: lighter;
+
+}
+
+.footer-li a:hover{
+    color: aqua;
+    font-size: 20px;
+    transition: 0.5s  ease;
+}
+
+
+
+/*-----MEDIA SOCIAL-------*/
+.footer-son2{
+	grid-area: media;
+}
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.footer-son-h4-1{
+    margin: 0;
+    text-align: center;
+    font-family: 'calibri';
+    font-weight: lighter;
+}
+
+
+
+.footer-icons img{
+    width: 35px;
+    height: 35px;
+    padding: 10px 20px 0px 20px;
+    margin-top: 0px;
+
+}
+
+.footer-icons img:hover{
+
+    width: 40px;
+    height: 40px;
+    transition: 0.5s ease;
+
+}
+
+
+/*----Law-----*/
+
+.law{
+    grid-area: law;
+    display: flex;
+    justify-content: center; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 33px;
+    /* border-top: 6px solid var(--magenta); */
 }
 /* - - - - END - F O O T E R - END - - - - */

@@ -95,7 +95,7 @@ main h2{
 
 /* - - - - - A S I D E - - - - - */
 aside{
-    margin-left: 1rem;
+    padding-top: 4rem;
     text-align: center; 
 }
 .match-results-container{

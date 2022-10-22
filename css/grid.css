@@ -1,43 +1,35 @@
 body{
 	display: grid;
-	grid-template-columns: 3fr 1fr;
-	grid-template-rows: 25% 1fr auto;
+	grid-template-columns: 4fr 1fr;
+	grid-template-rows: 90px 1fr auto;
 	grid-template-areas: "header header"
 						 "main aside"
 						 "footer footer";
 	justify-content: center;
-	grid-row-gap: 1rem;
+	gap: 1rem;
 }
 header{
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: auto 1fr auto;
-	grid-template-areas: "date"
-						 "title"
-						 "navbar";
+	grid-template-rows: 4rem 1rem;
+	grid-template-areas: "tittle-navbar"
+						 "date";
 	grid-area: header;
-	grid-row-gap: 1rem;
+	row-gap: 0;
 }
-header>p{
-	grid-area: date;
-}
-header h1{
-	grid-area: title;
-	align-self: center;
-}
-header nav{
+.tittle-navbar{
 	display: grid;
-	grid-template-columns: repeat(4, auto);
-	grid-area: navbar;
+	grid-template-columns: 1fr 8fr 1fr;
+	gap: 1rem;
 }
 main{
 	grid-area: main;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(4,1fr);
 	grid-template-rows: max-content;
 	grid-column-gap: 1rem;
 	grid-row-gap: 2rem;
-	grid-template-areas: "popular popular";
+	grid-template-areas: "popular popular popular popular";
 }
 .shortnews{
 	display: grid;

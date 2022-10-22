@@ -2,57 +2,64 @@
 :root{
 	--grey: #565656;
 	--magenta: #cc1e44;
-}
-@font-face{
-	font-family: news;
-	src: url("../assets/fonts/chomsky.otf");
-}
-@font-face{
-	font-family: letters;
-	src: url("../assets/fonts/italiana.ttf");
-}
-@font-face{
-	font-family: news1;
-	src: url("../assets/fonts/ChakraPetch-Bold.ttf");
+	--lightgrey:rgb(188, 188, 188);
 }
 @font-face {
-	font-family: AlfaSalb;
-	src: url("../assets/fonts/AlfaSlabOne-Regular.ttf");
+    font-family: Roboto;
+    src: url("../assets/fonts/Roboto-Light.ttf");
 }
+
 /* - - - - END - F O N T S - A N D - V A R S - END - - - - - */
 
 /* - - - - - G E N E R A L - - - - - */
 body{
 	margin: auto;
-	max-width: 1400px;
+	font-family: Roboto, monospace;
 }
 nav{
-	text-align: center;
+	display: flex;
+	flex-direction: row;
+	font-size: 1.25rem;
+	overflow: hidden;
 }
 a{
 	color: inherit;
 	text-decoration: none;
 }
+body, header, footer{
+	width: 98%;
+	max-width: 1400px;
+}
+#check-menu, #menu, #close-menu{
+	z-index: 9999;
+	display: none;
+}
 /* - - - - END - G E N E R A L - END - - - - */
-
 /* - - - - - H E A D E R - - - - - */
 header{
 	color: black;
-	position: relative;
+	position: fixed;
+	background-color: #fff;
+	z-index: 1000;
 }
-h1{
-	color: var(--magenta);
-	font-family: AlfaSalb;
+.tittle-navbar{
+	grid-area: tittle-navbar;
+	align-items: center;
+	margin-top: 0.5rem;
+	border-bottom: 1px solid var(--lightgrey);
+}
+.tittle-navbar p{
 	font-size: 3rem;
-	margin: auto;
-	text-align: center;
 }
-header nav a{
-	border-right: 3px solid var(--magenta);
-	font-size: 1.25rem;
+nav a{
+	margin: 0 0.5rem;
 }
-header nav a:last-child{
-	border-right: none;
+.date{
+	height: 100%;
+	text-align: end;
+}
+header nav a:hover,#registry:hover{
+	color: var(--magenta);
 }
 /* - - - - END - H E A D E R - END - - - - */
 

@@ -14,7 +14,7 @@
 /* - - - - - G E N E R A L - - - - - */
 body{
 	margin: auto;
-	font-family: Roboto, monospace;
+	/* font-family: Roboto, monospace; */
 }
 header nav{
 	display: flex;
@@ -199,7 +199,7 @@ nav a{
     position: absolute;
     background: none;
     top:75%;
-    
+
 }
 
 
@@ -286,7 +286,7 @@ nav a{
 .law{
     grid-area: law;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     justify-content: center;
     align-items: center;
     text-align: center;

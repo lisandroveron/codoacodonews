@@ -23,6 +23,11 @@
 	aside{
 		display: none;
 	}
+	footer{
+		grid-template-columns: repeat(2,1fr);
+		grid-template-areas: "sections media"
+								"law law";
+	}
 	.principal-new h3{
 		font-size: 1.4rem;
 	}
@@ -59,6 +64,11 @@
 		margin:1rem 0 ;
 	}
 	/* menu end */
+
+	.footer-son-title{
+		display: none;
+	}
+
 
 }
 @media screen and (max-width: 600px){

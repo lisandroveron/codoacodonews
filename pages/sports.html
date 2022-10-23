@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../assets/icons/logo.svg">
     <link rel="stylesheet" type="text/css" href="../css/normalize.css">
@@ -14,235 +13,472 @@
 </head>
 <body>
     <header>
-		<!-- <p>Dolar: $145.16</p>
-		<p>Blue: $292.00</p> -->
-		<p>Sabado, 3 de Septiembre de 2022</p>
-		<h1>Diario <br> Codo a Codo</h1>
-		<nav>
-			<a href="../index.html" class="nav-item">Inicio</a>
-			<a href="../pages/weather.html" class="nav-item">Clima</a>
-			<a href="../pages/sports.html" class="nav-item">Deportes</a>
-			<a href="" class="nav-item">Finanzas</a>
-		</nav>
+		<div class="tittle-navbar">
+			<div class="tittle-logo">
+                <div class="header-logo">
+                    <p class="header-title">CAC</p>
+                    <div class="header-title1">
+                        <p>CODO A CODO</p>
+                    </div>
+                    <p class="header-title2">EL DIARIO DE LA GENTE</p>
+                </div>
+            </div>
+
+            <input type="checkbox" id="check-menu">
+            <label id="menu" for="check-menu">
+                <span id="open-menu">&#9776;</span>
+                <span id="close-menu">X</span>
+            </label>
+			<nav class="nav">
+				<a href="../index.html">Inicio</a>
+				<a href="../pages/weather.html">Clima</a>
+				<a href="../pages/sports.html">Deportes</a>
+				<a href="../pages/finance.html">Finanzas</a>
+			</nav>
+			<a href="../pages/form.html" class="button-study">Registrate</a>
+		</div>
+		<div class="date">
+			<p>marzo 21 2022</p>
+		</div>
     </header>
     <main>
-        <nav class="sports-bar">
-            <a href="#futbol-tittle"><img src="../assets/icons/sports/futbolista.png" alt="futbolista"></a>
-            <a href="#natacion-tittle"><img src="../assets/icons/sports/natacion.png" alt="futbolista"></a>
-            <a href="#hockey-tittle"><img src="../assets/icons/sports/silueta-de-jugador-de-hockey.png" alt="futbolista"></a>
-            <a href="#handball-tittle"><img src="../assets/icons/sports/handball.png" alt="futbolista"></a>
-            <a href="#ciclismo-tittle"><img src="../assets/icons/sports/bicycle.png" alt="futbolista"></a>
-        </nav>
-        <section class="news-section">
-            <section>
-                <h2 class="section-tittle" id="futbol-tittle">Fútbol</h2>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-            </section>
-            <section>
-                <p class="section-tittle" id="natacion-tittle">Natación</p>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h2>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h2>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h2>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h2>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h2>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h2>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h2>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h2>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h2>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h2>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h2>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h2>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-            </section>
-            <section>
-                <p class="section-tittle" id="hockey-tittle">Hockey</p>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-            </section>
-            <section>
-                <p class="section-tittle" id="handball-tittle">Handball</p>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-            </section>
-            <section>
-                <p class="section-tittle" id="ciclismo-tittle">Ciclismo</p>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-                <article class="shortnews">
-                    <p>EUROPA LEAGUE</p>
-                    <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
-                    <img src="../assets/img/sports/botellazo-al-arbitro.png">
-                    <h4>El duelo que se llevaron los moldavos  tuvo que interrumpirse durante un buen rato al recibir el árbitro asistente del eslovaco Rade Obrenovic un botellazo tremendo</h4>
-                </article>
-            </section>
+        <h2>Deportes</h2>
+        <section class="principal-new-container">
+            <div class="principal-new">
+                <a href="">
+                    <img alt="Di Maria tocandose la pierna"src="../assets/img/sports/angel-di-maria.webp">
+                    <div class="line"></div>
+                    <h3>Ángel Di María se realizará mañana los estudios tras la lesión: cuánto tiempo podría estar sin jugar</h3>
+
+                </a>
+            </div>
+        </section>
+        <div class="news">
+            <a href="">
+                <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                <div class="line"></div>
+                <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+            </a>
+        </div>
+        <div class="news">
+            <a href="">
+                <img alt="Scaloni en la cancha" src="../assets/img/sports/scaloni-y-messi_862x485.webp">
+                <div class="line"></div>
+                <h3>Scaloni, entre el Messi "fuera de serie" y el "sueño" de seguir en la Selección Argentina</h3>
+            </a>
+        </div>
+        <div class="news">
+            <a href="">
+                <img alt="Copa del mundo" src="../assets/img/sports/copa_del_mundo.webp">
+                <div class="line"></div>
+                <h3>Descubre cuál será el recorrido que hará la Copa del Mundo cuando llegue a México</h3>
+            </a>
+        </div>
+        <div class="news">
+            <a href="">
+                <img alt="Johana Colla posando" src="../assets/img/sports/Fisicoculturista.webp">
+                <div class="line"></div>
+                <h3>Los audios reveladores de la fisicoculturista argentina hallada muerta en Brasil</h3>
+            </a>
+        </div>
+        <div class="news">
+            <a href="">
+                <img alt="Antonella, messi y Harington posando" src="../assets/img/sports/antonella_y_messi.webp">
+                <div class="line"></div>
+                <h3>Furor por la foto de Antonela Roccuzzo y Lionel Messi junto a “Jon Snow”</h3>
+            </a>
+        </div>
+        <div class="news">
+            <a href="">
+                <img alt="Jugadores en la cancha, instante del botellazo" src="../assets/img/sports/botellazo-al-arbitro.png">
+                <div class="line"></div>
+                <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
+            </a>
+        </div>
+        <div class="news">
+            <a href="">
+                <img alt="Johana Colla posando" src="../assets/img/sports/Fisicoculturista.webp">
+                <div class="line"></div>
+                <h3>Los audios reveladores de la fisicoculturista argentina hallada muerta en Brasil</h3>
+            </a>
+        </div>
+        <div class="news">
+            <a href="">
+                <img alt="Antonella, messi y Harington posando" src="../assets/img/sports/antonella_y_messi.webp">
+                <div class="line"></div>
+                <h3>Furor por la foto de Antonela Roccuzzo y Lionel Messi junto a “Jon Snow”</h3>
+            </a>
+        </div>
+        <div class="news">
+            <a href="">
+                <img alt="Jugadores en la cancha, instante del botellazo" src="../assets/img/sports/botellazo-al-arbitro.png">
+                <div class="line"></div>
+                <h3>¡Vergonzoso! Detienen el Omonia-Sheriff de por un botellazo al árbitro asistente</h3>
+            </a>
+        </div>
+        <section class="news-by-sport-container">
+            <p class="section-tittle">Futbol</p>
+            <div class="scroll-news">
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="news-by-sport-container">
+            <p class="section-tittle">Futbol</p>
+            <div class="scroll-news">
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="news-by-sport-container">
+            <p class="section-tittle">Futbol</p>
+            <div class="scroll-news">
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="">
+                        <img alt="Plantel de Independiente Festejando" src="../assets/img/sports/festejo-independiente_862x485.webp">
+                        <div class="line"></div>
+                        <h3>Independiente sumó un triunfo ante Arsenal tras el traspié de la Copa Argentina</h3>
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
     <aside>
-        <div class="football-aside">
-            <p>River - Boca</p>
-            <p>2 - 1</p>
-            <img src="../assets/img/sports/football-field.png" alt="footbal-field" class="field">
-            <img src="../assets/img/sports/River_logo.png" alt="river-plate-logo" class="club-logo-left">
-            <img src="../assets/img/sports/boca_logo.png" alt="boca-juniors-logo" class="club-logo-right">
+        <div>
+            <p>Europa League</p>
+        </div>
+        <div class="match-results-container">
+            <div class="team">
+                <img class="team-logo" src="../assets/img/sports/River_logo.png" alt="river-plate-logo" >
+                <p class="team-name">RIV</p>
+            </div>
+            <div class="match-results">
+                <p> 2 - 1 </p>
+            </div>
+            <div class="team">
+                <img class="team-logo" src="../assets/img/sports/lanus-logo.png" alt="lanus-logo" >
+                <p class="team-name">LAN</p>
+            </div>
+        </div>
+        <div class="match-results-container">
+            <div class="team">
+                <img class="team-logo" src="../assets/img/sports/River_logo.png" alt="river-plate-logo" >
+                <p class="team-name">RIV</p>
+            </div>
+            <div class="match-results">
+                <p> 2 - 1 </p>
+            </div>
+            <div class="team">
+                <img class="team-logo" src="../assets/img/sports/lanus-logo.png" alt="lanus-logo" >
+                <p class="team-name">LAN</p>
+            </div>
+        </div>
+        <div>
+            <p>Liga Argentina</p>
+        </div>
+        <div class="match-results-container">
+            <div class="team">
+                <img class="team-logo" src="../assets/img/sports/River_logo.png" alt="river-plate-logo" >
+                <p class="team-name">RIV</p>
+            </div>
+            <div class="match-results">
+                <p> 2 - 1 </p>
+            </div>
+            <div class="team">
+                <img class="team-logo" src="../assets/img/sports/lanus-logo.png" alt="lanus-logo" >
+                <p class="team-name">LAN</p>
+            </div>
+        </div>
+        <div class="match-results-container">
+            <div class="team">
+                <img class="team-logo" src="../assets/img/sports/River_logo.png" alt="river-plate-logo" >
+                <p class="team-name">RIV</p>
+            </div>
+            <div class="match-results">
+                <p> 2 - 1 </p>
+            </div>
+            <div class="team">
+                <img class="team-logo" src="../assets/img/sports/lanus-logo.png" alt="lanus-logo" >
+                <p class="team-name">LAN</p>
+            </div>
         </div>
     </aside>
     <footer>
-        <p>Diario Codo a Codo. © Todos los derechos reservados. 2022</p>
+        <div class="logo-container">
+            <div class="logo">
+                <p class="primary-title">CAC</p>
+                <div class="secundary-title">
+                    <p>CODO A CODO</p>
+                </div>
+                <p class="phrase">EL DIARIO DE LA GENTE</p>
+            </div>
+        </div>
+        <div class="sections">
+            <h4>Secciones</h4>
+            <div class="footer-secction">
+                <nav class="footer-nav">
+                    <ul class="footer-ul">
+                        <li class="footer-li"><a href="../index.html">Inicio</a></li>
+                        <li class="footer-li"><a href="../pages/weather.html">Clima</a></li>
+                        <li class="footer-li"><a href="../pages/sports.html">Deportes</a></li>
+                        <li class="footer-li"><a href="../pages/finance.html">Finanzas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-son">
+            <h4 class="footer-son-h4-1">Redes</h4>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../assets/icons/Footer/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"target="_blank"><img src="../assets/icons/Footer/Instagram.png" alt="instagram"></a>
+                <a href="https://twitter.com/"target="_blank"><img src="../assets/icons/Footer/Twiter.png" alt="twiter"></a>
+            </div>
+
+        </div>
+        <div class="law">
+            <small>© 2022 <b>Codo a Codo</b> - Todos los derechos Reservados.</small>
+        </div>
     </footer>
-    
 </body>
 </html>

@@ -1,11 +1,77 @@
+@media screen and (max-width: 1300px) {
+	main{
+		grid-template-areas: "popular popular popular";
+		grid-template-columns: auto;
+	}
+
+}
 @media screen and (max-width: 960px){
 	body{
 		grid-template-areas: "header header"
 							 "main main"
 							 "footer footer";
 	}
+	.tittle-navbar{
+		display: grid;
+		gap: 0.5rem;
+		grid-template-columns: 3rem auto 6rem;
+	}
+	header .tittle-logo{
+		grid-column: 2/3;
+		display: flex;
+		justify-content: center;
+	}
+	main{
+		grid-template-areas: "popular popular";
+		gap: 1rem;
+	}
 	aside{
 		display: none;
+	}
+	.principal-new h3{
+		font-size: 1.4rem;
+	}
+	.news img{
+		height: 250px;
+	}
+	/* menu start */
+	#menu{
+		display: block;
+		font-size: 3rem;
+		position: absolute;
+	}
+	#check-menu:not(:checked) ~ nav{
+		display: none;
+	}
+	#check-menu:checked ~ label #close-menu{
+		display: block;
+	}
+	#check-menu:checked ~ label #open-menu{
+		display: none;
+	}
+	header nav{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 0;
+		width: 30vw;
+		height: 100vh;
+		background-color: rgb(255, 255, 255);
+		text-align: center;
+		font-size: 2rem ;
+	}
+	header nav a{
+		margin:1rem 0 ;
+	}
+	/* menu end */
+
+	.logo{
+		display: none;
+	}
+	footer{
+		grid-template-columns: repeat(2,1fr);
+		grid-template-areas: "sections media"
+								"law law";
 	}
 }
 @media screen and (max-width: 600px){
@@ -18,15 +84,44 @@
 	}
 	main{
 		grid-template-areas: "popular";
-		grid-template-columns: auto;
-		grid-template-rows: repeat(auto-fill, auto);
-		grid-gap: 1.5rem 0;
+		gap: 1.5rem 0;
 	}
-	/* - - - - END - G R I D - END - - - - */
 	h1, header h2{
 		font-size: 3rem;
 	}
 	.shortnews{
 		font-size: 1rem;
+	}
+	.principal-new div.line{
+		border-top: 2px solid #cc1e44;
+	}
+	.principal-new{
+		position:static;
+	}
+	.principal-new img{
+		width: 100%;
+		height: 250px;
+		object-fit: cover;
+	}
+	.principal-new h3{
+		font-size: 1.5rem;
+		bottom:0rem;
+		left: 0rem;
+		right: 0rem;
+		padding: 0 0;
+		position: static;
+		background: #fff;
+		color: #000
+	}
+	header nav{
+		width: 100vw;
+	}
+	footer{
+		grid-template-columns: 1fr;
+		grid-template-areas: "media"
+								"law";
+	}
+	.sections{
+		display: none;
 	}
 }

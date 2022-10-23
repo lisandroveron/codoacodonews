@@ -1,58 +1,131 @@
+
 /* - - - - - F O N T S - A N D - V A R S - - - - - */
 :root{
 	--grey: #565656;
 	--magenta: #cc1e44;
-}
-@font-face{
-	font-family: news;
-	src: url("../assets/fonts/chomsky.otf");
-}
-@font-face{
-	font-family: letters;
-	src: url("../assets/fonts/italiana.ttf");
-}
-@font-face{
-	font-family: news1;
-	src: url("../assets/fonts/ChakraPetch-Bold.ttf");
+	--lightgrey:rgb(188, 188, 188);
 }
 @font-face {
-	font-family: AlfaSalb;
-	src: url("../assets/fonts/AlfaSlabOne-Regular.ttf");
+    font-family: Roboto;
+    src: url("../assets/fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: LuckyestGuy;
+    src: url(../assets/fonts/LuckiestGuy-Regular.ttf);
 }
 /* - - - - END - F O N T S - A N D - V A R S - END - - - - - */
 
 /* - - - - - G E N E R A L - - - - - */
 body{
 	margin: auto;
-	max-width: 1400px;
+	font-family: Roboto, monospace;
 }
-nav{
-	text-align: center;
+header nav{
+	display: flex;
+	flex-direction: row;
+	font-size: 1.25rem;
+	overflow: hidden;
 }
 a{
 	color: inherit;
 	text-decoration: none;
 }
+body, header, footer{
+	width: 98%;
+	max-width: 1400px;
+}
+#check-menu, #menu, #close-menu{
+	z-index: 9999;
+	display: none;
+}
 /* - - - - END - G E N E R A L - END - - - - */
-
 /* - - - - - H E A D E R - - - - - */
 header{
 	color: black;
-	position: relative;
+	position: fixed;
+	background-color: #fff;
+	z-index: 9999;
 }
-h1{
+header nav a:hover,#registry:hover{
 	color: var(--magenta);
-	font-family: AlfaSalb;
-	font-size: 3rem;
-	margin: auto;
+}
+.tittle-navbar{
+	grid-area: tittle-navbar;
+	align-items: center;
+	margin-top: 0.5rem;
+	border-bottom: 1px solid var(--lightgrey);
+}
+
+nav a{
+	margin: 0 0.5rem;
+}
+.date{
+	display: grid;
+	grid-template-columns: 80% 20%;
+	grid-template-rows: 1fr;
+}
+.quotes{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr;
+}
+.pricing{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 20px;
+    border-right: 1px solid;
+}
+.button-study {
+    background-color: rgba(252, 92, 94, 0.7);
 	text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    /* font-family: 'Roboto',sans-serif; */
+    cursor: pointer;
 }
-header nav a{
-	border-right: 3px solid var(--magenta);
-	font-size: 1.25rem;
+.button-study:hover {
+    background-color: aqua;
+    transition: 2s;
 }
-header nav a:last-child{
-	border-right: none;
+
+/*-----LOGO-----*/
+
+
+.header-logo{
+    position: relative; /*title2 lo pueda mover*/
+    display: flex;
+    align-items:center;  /*lo tiramos para arriba a cac*/
+    font-family: none;
+}
+
+.header-title{
+    font-size: 3.75rem;
+    position: absolute;
+}
+.header-title1 {
+    position: relative;
+    letter-spacing: 6px;
+    height: 4%;
+    top: 3%;
+}
+.header-title1 p {
+    font-size: 0.375rem;
+    padding-left: 16px;
+    padding-bottom: 0.8px;
+    background-color: #fff;
+}
+.header-title2{
+    font-size: 9px;
+    position: absolute;
+    background: none;
+    top:350%;
+    width: 100%;
+    text-align: center;
 }
 /* - - - - END - H E A D E R - END - - - - */
 
@@ -92,12 +165,159 @@ header nav a:last-child{
 /* - - - - END - M A I N - END - - - - */
 
 /* - - - - - A S I D E - - - - - */
+.ad{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.ad-advisor{
+    display: inline-block;
+    position: absolute;
+    padding: 0 3px;
+    color: #fff;
+    background-color:  rgba(0, 0, 0, 0.2);
+    width: 2rem;
+    right: 0;
+    text-align: center;
+    font-size: 1rem;
+}
+.ad-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+.ad-content div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ad-logo{
+    width: 40px;
+    margin-right: 1rem ;
+}
+.ad-slogan{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+.ad-slogan :nth-child(1){
+    font-family: LuckyestGuy, Roboto;
+}
+.ad-slogan :nth-child(2){
+    font-size: 0.8rem;
+}
 
+aside iframe{
+    margin: 1rem 0;
+    width: 260px;
+    height: 260px; 
+    border: 0;
+}
 /* - - - - END - A S I D E - END - - - - */
 
 /* - - - - - F O O T E R - - - - - */
-footer p{
-	font-size: 1.5rem;
-	text-align: center;
+footer{
+    width: 100%;
+    border-top: 1px solid var(--magenta);
+}
+/*---Logo---*/
+.logo-container {
+    grid-area: logo;
+    display: flex;
+    justify-content: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+.logo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;  /*lo tiramos para arriba a cac*/
+    width: 100%;
+}
+.primary-title{
+    font-size: 60px;
+    position: absolute;
+}
+.secundary-title {
+    position: relative;
+    height: 8%;
+    top: 6%;
+    letter-spacing: 6px;
+    background-color: #fff;
+}
+.secundary-title p {
+    font-size: 6px;
+    padding-bottom: 0.8px;
+    padding-left: 16px;
+}
+.phrase{
+    font-size: 9px;
+    position: absolute;
+    margin-top: 6px ;
+    background: none;
+    top:75%;  
+}
+/*---Secciones---*/
+.sections{
+	grid-area: sections;
+}
+.sections h4{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-family: 'calibri';
+    font-weight: lighter;
+}
+.footer-ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.footer-li{
+    list-style: none;
+}
+.footer-li a{
+    display: flex;
+}
+.footer-li a:hover{
+    color: var(--magenta);
+    font-size: 20px;
+    transition: 0.5s  ease;
+}
+/*-----MEDIA SOCIAL-------*/
+
+.footer-son2{
+	grid-area: media;
+}
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-son-h4-1, .footer-son-h4{
+    margin: 0;
+    text-align: center;
+}
+.footer-icons img{
+    height: 35px;
+    padding: 10px 20px 0px 20px;
+    margin-top: 0px;
+}
+.footer-icons img:hover{
+    height: 40px;
+    transition: 0.5s ease;
+}
+/*----Law-----*/
+
+.law{
+    grid-area: law;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 33px;
+    /* border-top: 6px solid var(--magenta); */
 }
 /* - - - - END - F O O T E R - END - - - - */

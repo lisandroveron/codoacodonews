@@ -3,10 +3,7 @@
 	--grey: #565656;
 	--magenta: #cc1e44;
 }
-@font-face {
-    font-family: AlfaSalb;
-    src: url("../assets/fonts/AlfaSlabOne-Regular.ttf");
-}
+
 /* - - - - END - F O N T S - A N D - V A R S - END - - - - - */
 
 
@@ -15,83 +12,112 @@
 /* - - - - END - G E N E R A L - END - - - - */
 
 /* - - - - - M A I N - - - - - */
-main{
-    gap: 4rem;
+main h2{
+    grid-column: 1/-1;
+    font-size: 2rem;
 }
-.sports-bar a, .sports-bar img{
-    width: 2.8rem;
-    height: 2.8rem;
+.line{
+    box-sizing: border-box;
+    width: 80%;
+    border-top: 2px solid #cc1e44;
+}
+.principal-new-container{
+    grid-column: 1/-1;
+    display: grid;
+}
+.principal-new div.line{
+		border-top: 0px solid #cc1e44;
+}
+.principal-new{
+    position: relative;
+}
+.principal-new img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.principal-new h3{
+    font-size: 3rem;
+    bottom:1rem;
+    left: 1rem;
+    right: 1rem;
+    padding: 0.8rem 0.8rem;
+    position: absolute;
+    background: #00000071;
+    color: rgba(255, 255, 255, 0.9);
+}   
+.news h3{
+    font-size: 1.4rem;
+}
+/* .news h4{
+    font-size: 1rem;
+    height: 5.2em;
+    overflow: hidden;
+}
+.news p{
+    bottom: 0;
+    font-size: 0.8rem;
+    color: #cc1e44;
+} */
+.news img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+.news-by-sport-container{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-rows: 3rem auto;
+    gap: 0.5rem;
 }
 .section-tittle{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2.5rem;
-    text-align: left;
-    grid-column: 1 / 4
 }
-.sports-bar{
+.scroll-news{
     display: grid;
-    grid-template-columns: repeat(5, 1fr );
-    justify-items: center;
+    grid-template-rows: 1fr;
+    grid-auto-flow: column;
+    
+    height: 235px; 
+    overflow-x: scroll ;
 }
-
-.news-section > section{
-    display: grid;
-    grid-template: repeat(3,auto);
-    padding-bottom: 2rem;
-    gap: 2rem;
+.scroll-news div.news img{
+    height: 120px;
 }
-.shortnews h3{
-	font-size: 2rem;
-    color: black    ;
+.scroll-news div.news{
+    width: 200px;
+    margin: 0 0.2rem;
 }
-.shortnews h4{
-	-moz-box-orient: vertical;
-	-ms-box-orient: vertical;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
-	color: var(--grey);
-	display: -webkit-box;
-	font-size: 1rem;
-	font-weight: normal;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-.shortnews img{
-	height: 220px;
-	margin: 15px 0;
-	overflow: hidden;
-	width: 100%;
+.scroll-news h3{
+    font-size: 1.2rem;
 }
 /* - - - - END - M A I N - END - - - - */
 
 /* - - - - - A S I D E - - - - - */
-
 aside{
-    grid-auto-flow: row;
+    padding-top: 4rem;
+    text-align: center; 
 }
-.football-aside{
-    text-align: center;
-    
+.match-results-container{
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    margin: 1rem  auto;
+    width: 90%;
+    height: 60px;
+    box-shadow: 0 0 2px;
 }
-.field{
-    z-index: -2;
-    max-width: 80%;
-    border-radius: 20px;
+.team{
+    padding: 5px;
+    height: 60px;
+    font-size: 0.9rem;
 }
-.football-aside p{
-    z-index: 1;
-    transform: translateY(7.25rem);
-
-    font-size: 2rem;
-    font-family: anton;
-    color: #cc1e44;
+.team-logo{
+    height: 65%;
 }
-.club-logo-left{
-    width: 20%;
-    transform: translate(-80%,-170%)
-}
-.club-logo-right{
-    width: 20%;
-    transform: translate(80%, -170%);
+.match-results{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;    
 }
 /* - - - - END - A S I D E - END - - - - */

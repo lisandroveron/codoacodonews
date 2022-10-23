@@ -13,27 +13,34 @@
 </head>
 <body>
 	<header>
-		<img class="skyicon sun" src="../assets/icons/weather/headersun.svg" alt="">
-		<svg class="waves" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
-			<path 
-			 d="M 100 80
-			 	C 75 70 75 70 50 80, 25 100 25 100 0 90
-			 	V 0 100 H 100 100 Z"
-			 stroke-width="0" stroke="black"></path>
-			<path 
-			 d="M 0 70
-				C 10 63 35 63 50 70, 65 80 90 80 100 70
-				L 100 100, 0 100 Z" 
-			stroke-width="0" stroke="black" />
-		</svg>
-		<h1>El clima</h1>
-		<nav>
-			<a href="../index.html">Inicio</a>
-			<a href="weather.html">Clima</a>
-			<a href="sports.html">Deportes</a>
-			<a href="">Finanzas</a>
-		</nav>
-	</header>
+		<div class="tittle-navbar">
+            <div class="tittle-logo">
+                <div class="header-logo">
+                    <p class="header-title">CAC</p>
+                    <div class="header-title1">
+                        <p>CODO A CODO</p>
+                    </div>
+                    <p class="header-title2">EL DIARIO DE LA GENTE</p>
+                </div>
+            </div>
+
+            <input type="checkbox" id="check-menu">
+            <label id="menu" for="check-menu">
+                <span id="open-menu">&#9776;</span>
+                <span id="close-menu">X</span>
+            </label>
+			<nav class="nav">
+				<a href="../index.html">Inicio</a>
+				<a href="#">Clima</a>
+				<a href="../pages/sports.html">Deportes</a>
+				<a href="../pages/finance.html">Finanzas</a>
+			</nav>
+			<a href="../pages/form.html" class="button-study">Registrate</a>
+		</div>
+		<div class="date">
+			<p>marzo 21 2022</p>
+		</div>
+    </header>
 	<main>
 		<table>
 			<tr id="weatherRow0">
@@ -59,8 +66,41 @@
 		<p id="temp">0<span>°C</span></p>
 	</aside>
 	<footer>
-		<p>Diario Codo a Codo. © Todos los derechos reservados. 2022</p>
-	</footer>
+        <div class="logo-container">
+            <div class="logo">
+                <p class="primary-title">CAC</p>
+                <div class="secundary-title">
+                    <p>CODO A CODO</p>
+                </div>
+                <p class="phrase">EL DIARIO DE LA GENTE</p>
+            </div>
+        </div>
+        <div class="sections">
+            <h4>Secciones</h4>
+            <div class="footer-secction">
+                <nav class="footer-nav">
+                    <ul class="footer-ul">
+                        <li class="footer-li"><a href="../index.html">Inicio</a></li>
+                        <li class="footer-li"><a href="../pages/weather.html">Clima</a></li>
+                        <li class="footer-li"><a href="../pages/sports.html">Deportes</a></li>
+                        <li class="footer-li"><a href="../pages/finance.html">Finanzas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-son">
+            <h4 class="footer-son-h4-1">Redes</h4>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../assets/icons/Footer/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"target="_blank"><img src="../assets/icons/Footer/Instagram.png" alt="instagram"></a>
+                <a href="https://twitter.com/"target="_blank"><img src="../assets/icons/Footer/Twiter.png" alt="twiter"></a>
+            </div>
+
+        </div>
+        <div class="law">
+            <small>© 2022 <b>Codo a Codo</b> - Todos los derechos Reservados.</small>
+        </div>
+    </footer>
 	<script type="text/javascript" src="../js/weather.js"></script>
 </body>
 </html>

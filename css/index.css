@@ -110,11 +110,14 @@ nav a{
 .header-title1 {
     position: relative;
     letter-spacing: 6px;
+    height: 4%;
+    top: 3%;
 }
 
 .header-title1 p {
     font-size: 6px;
     padding-left: 16px;
+    padding-bottom: 0.8px;
 }
 
 .header-title2{

@@ -28,11 +28,6 @@
 	aside{
 		display: none;
 	}
-	footer{
-		grid-template-columns: repeat(2,1fr);
-		grid-template-areas: "sections media"
-								"law law";
-	}
 	.principal-new h3{
 		font-size: 1.4rem;
 	}
@@ -70,11 +65,14 @@
 	}
 	/* menu end */
 
-	.footer-son-title{
+	.logo{
 		display: none;
 	}
-
-
+	footer{
+		grid-template-columns: repeat(2,1fr);
+		grid-template-areas: "sections media"
+								"law law";
+	}
 }
 @media screen and (max-width: 600px){
 	/* - - - - - G R I D - - - - - */
@@ -117,5 +115,13 @@
 	}
 	header nav{
 		width: 100vw;
+	}
+	footer{
+		grid-template-columns: 1fr;
+		grid-template-areas: "media"
+								"law";
+	}
+	.sections{
+		display: none;
 	}
 }

@@ -253,6 +253,7 @@ footer{
 .phrase{
     font-size: 9px;
     position: absolute;
+    margin-top: 6px ;
     background: none;
     top:75%;  
 }
@@ -278,12 +279,11 @@ footer{
 .footer-li a{
     display: flex;
 }
-/*
 .footer-li a:hover{
-    color: aqua;
+    color: var(--magenta);
     font-size: 20px;
     transition: 0.5s  ease;
-} */
+}
 /*-----MEDIA SOCIAL-------*/
 
 .footer-son2{

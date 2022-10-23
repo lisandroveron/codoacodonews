@@ -9,7 +9,7 @@ body{
     background: linear-gradient(rgba(234, 234, 234, 0.7),rgba(234, 171, 172, 0.70))
     ,url(../assets/img/finance/universidad.jpg);
     background-size: cover;
-    height: 715px;
+    height: 100vh;
     display: flex;
     justify-content: center; /*es para centrarlo horizontal*/
     align-items: center; /*es para centrarlo vertical debe tener un height definido*/

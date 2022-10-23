@@ -11,17 +11,33 @@ body{
 header{
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 4rem 1rem;
+	grid-template-rows: 5rem 1rem;
 	grid-template-areas: "tittle-navbar"
 						 "date";
 	grid-area: header;
 	row-gap: 0;
+	justify-content: center;
 }
 .tittle-navbar{
 	display: grid;
-	grid-template-columns: 1fr 8fr 1fr;
+	grid-template-columns: 4fr 8fr 1fr;
 	gap: 1rem;
+
+
 }
+.tittle-logo{
+	display: grid;
+	justify-content: center;
+
+
+}
+
+
+
+
+
+
+
 main{
 	grid-area: main;
 	display: grid;

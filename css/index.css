@@ -51,10 +51,7 @@ header nav a:hover,#registry:hover{
 	margin-top: 0.5rem;
 	border-bottom: 1px solid var(--lightgrey);
 }
-.tittle{
-	font-size: 3rem;
-	height: 3rem;
-}
+
 nav a{
 	margin: 0 0.5rem;
 }
@@ -90,6 +87,56 @@ nav a{
     background-color: aqua;
     transition: 2s;
 }
+
+/*-----LOGO-----*/
+
+
+.header-logo{
+    position: relative; /*title2 lo pueda mover*/
+    display: flex;
+    align-items:center;  /*lo tiramos para arriba a cac*/
+}
+
+
+.header-title{
+    font-size: 60px;
+    position: absolute;
+}
+
+
+.header-title1 {
+    position: relative;
+    letter-spacing: 6px;
+}
+
+.header-title1 p {
+    font-size: 6px;
+    padding-left: 16px;
+
+
+}
+
+
+.header-title2{
+    font-size: 9px;
+    position: absolute;
+    background: none;
+    top:350%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* - - - - END - H E A D E R - END - - - - */
 
 /* - - - - - M A I N - - - - - */
@@ -133,7 +180,7 @@ nav a{
 
 /* - - - - - F O O T E R - - - - - */
 .footer-container{
-    height:85px;
+
     border-top: 1px solid var(--magenta);
 }
 /*---Logo---*/

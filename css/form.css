@@ -11,8 +11,8 @@ body{
     background-size: cover;
     height: 715px;
     display: flex;
-    justify-content: center; /*es para acentarlo horizontal*/
-    align-items: center; /*es para acentarlo vertical debe tener un height definido*/
+    justify-content: center; /*es para centrarlo horizontal*/
+    align-items: center; /*es para centrarlo vertical debe tener un height definido*/
 
 }
 
@@ -109,24 +109,24 @@ button{
     cursor: pointer;
 }
 
+.return{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.return a{
+    text-decoration: none;
+    color:rgb(201, 0, 0);
+}
+
+
 @media screen and (max-width: 600px) {
     .form{
         width:80%;
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .warning{
     width: 200px;

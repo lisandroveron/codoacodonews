@@ -19,7 +19,7 @@
 /* - - - - - G E N E R A L - - - - - */
 body{
 	margin: auto;
-	/* font-family: Roboto, monospace; */
+	font-family: Roboto, monospace;
 }
 header nav{
 	display: flex;
@@ -100,26 +100,24 @@ nav a{
     position: relative; /*title2 lo pueda mover*/
     display: flex;
     align-items:center;  /*lo tiramos para arriba a cac*/
+    font-family: none;
 }
 
 .header-title{
-    font-size: 60px;
-    position: absolute;
+    font-size: 3.75rem;
+    position: absolute;   
 }
-
 .header-title1 {
     position: relative;
     letter-spacing: 6px;
     height: 4%;
     top: 3%;
 }
-
 .header-title1 p {
-    font-size: 6px;
+    font-size: 0.375rem;
     padding-left: 16px;
     padding-bottom: 0.8px;
 }
-
 .header-title2{
     font-size: 9px;
     position: absolute;
@@ -128,8 +126,6 @@ nav a{
     width: 100%;
     text-align: center;
 }
-
-
 /* - - - - END - H E A D E R - END - - - - */
 
 /* - - - - - M A I N - - - - - */

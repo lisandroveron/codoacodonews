@@ -11,7 +11,12 @@
 							 "main main"
 							 "footer footer";
 	}
-	header .tittle{
+	.tittle-navbar{
+		display: grid;
+		gap: 0.5rem;
+		grid-template-columns: 3rem auto 6rem;
+	}
+	header .tittle-logo{
 		grid-column: 2/3;
 		display: flex;
 		justify-content: center;

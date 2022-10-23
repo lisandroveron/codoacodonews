@@ -22,20 +22,14 @@ header{
 	display: grid;
 	grid-template-columns: 3fr 10fr 0.5fr;
 	gap: 1rem;
-
-
 }
 .tittle-logo{
 	display: grid;
 	justify-content: center;
 }
-
 .nav{
 	justify-content: space-around;
 }
-
-
-
 main{
 	grid-area: main;
 	display: grid;

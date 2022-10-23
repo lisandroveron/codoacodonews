@@ -20,7 +20,7 @@ header{
 }
 .tittle-navbar{
 	display: grid;
-	grid-template-columns: 4fr 8fr 1fr;
+	grid-template-columns: 3fr 10fr 0.5fr;
 	gap: 1rem;
 
 
@@ -28,13 +28,11 @@ header{
 .tittle-logo{
 	display: grid;
 	justify-content: center;
-
-
 }
 
-
-
-
+.nav{
+	justify-content: space-around;
+}
 
 
 

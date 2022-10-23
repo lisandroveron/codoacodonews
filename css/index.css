@@ -14,6 +14,10 @@
     src: url("../assets/fonts/Roboto-Light.ttf");
 }
 
+@font-face {
+    font-family: LuckyestGuy;
+    src: url(../assets/fonts/LuckiestGuy-Regular.ttf);
+}
 /* - - - - END - F O N T S - A N D - V A R S - END - - - - - */
 
 /* - - - - - G E N E R A L - - - - - */
@@ -164,105 +168,120 @@ nav a{
 /* - - - - END - M A I N - END - - - - */
 
 /* - - - - - A S I D E - - - - - */
+.ad{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.ad-advisor{
+    display: inline-block;
+    position: absolute;
+    padding: 0 3px;
+    color: #fff;
+    background-color:  rgba(0, 0, 0, 0.2);
+    width: 2rem;
+    right: 0;
+    text-align: center;
+    font-size: 1rem;
+}
+.ad-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+.ad-content div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ad-logo{
+    width: 40px;
+    margin-right: 1rem ;
+}
+.ad-slogan{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+.ad-slogan :nth-child(1){
+    font-family: LuckyestGuy, Roboto;
+}
+.ad-slogan :nth-child(2){
+    font-size: 0.8rem;
+}
 
+aside iframe{
+    margin: 1rem 0;
+    width: 260px;
+    height: 260px; 
+    border: 0;
+}
 /* - - - - END - A S I D E - END - - - - */
 
 /* - - - - - F O O T E R - - - - - */
-.footer-container{
-
+footer{
+    width: 100%;
     border-top: 1px solid var(--magenta);
 }
 /*---Logo---*/
-
-.footer-son-title {
+.logo-container {
     grid-area: logo;
     display: flex;
     justify-content: left;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-.footer-son-title1{
+.logo{
     position: relative;
     display: flex;
     justify-content: center;
     align-items:center;  /*lo tiramos para arriba a cac*/
     width: 100%;
 }
-
-.footer-title{
+.primary-title{
     font-size: 60px;
     position: absolute;
-
 }
-
-.footer-title1 {
+.secundary-title {
     position: relative;
     height: 4%;
     top: 3%;
     letter-spacing: 6px;
-
 }
-
-.footer-title1 p {
+.secundary-title p {
     font-size: 6px;
     padding-bottom: 0.8px;
     padding-left: 16px;
-
 }
-
-
-.footer-title2{
+.phrase{
     font-size: 9px;
     position: absolute;
     background: none;
-    top:75%;
-
+    top:75%;  
 }
-
-
 /*---Secciones---*/
-.footer-son1{
+.sections{
 	grid-area: sections;
 }
-.footer-son .footer-son-h4{
+.sections h4{
     text-align: center;
-    margin-bottom: 10px;
-    margin-top: 0;
-    font-family: 'calibri';
-    font-weight: lighter;
-
 }
-
 .footer-ul{
-    padding: 0;
     display: flex;
-
+    justify-content: center;
+    padding: 0;
 }
-
 .footer-li{
     list-style: none;
-
-    margin-bottom: 20px;
-    margin-left: 50px;
 }
-
 .footer-li a{
-
-    font-size: medium;
     display: flex;
-    justify-content: left;
-    font-family: 'calibri';
-    font-weight: lighter;
-
 }
-
+/*
 .footer-li a:hover{
     color: aqua;
     font-size: 20px;
     transition: 0.5s  ease;
-}
-
-
-
+} */
 /*-----MEDIA SOCIAL-------*/
 .footer-son2{
 	grid-area: media;
@@ -271,32 +290,20 @@ nav a{
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
-
 .footer-son-h4-1{
     margin: 0;
     text-align: center;
-    font-family: 'calibri';
-    font-weight: lighter;
 }
-
-
-
 .footer-icons img{
     height: 35px;
     padding: 10px 20px 0px 20px;
     margin-top: 0px;
-
 }
-
 .footer-icons img:hover{
     height: 40px;
     transition: 0.5s ease;
-
 }
-
-
 /*----Law-----*/
 
 .law{

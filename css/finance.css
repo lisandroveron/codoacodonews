@@ -260,13 +260,8 @@ img {
     /* border: 2px solid; */
     width: 100%;
     height: 250px;
-    display: flex;
     justify-content: center;
     margin-top: 30px;
-
-
-
-
 }
 
 .img1 {
@@ -376,9 +371,5 @@ main p{
     background: none;
     text-align: center;
     margin: 0;
-
-}
-.spam-market img {
-    height: 500px;
 
 }

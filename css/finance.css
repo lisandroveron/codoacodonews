@@ -1,9 +1,5 @@
-*{
-    /* background-color: aliceblue; */
-    background-color: #fff;
-}
 
-
+/*-----HEADER------*/
 .container-title{
     display: flex;
     flex-direction: row;
